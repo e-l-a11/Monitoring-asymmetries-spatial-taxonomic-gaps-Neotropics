@@ -1,4 +1,4 @@
-# 04. Figure 1: (A) map of sites and (B) land-based site density per country (+ GDP partial correlation)
+# 04. Figure 1: (A) map of sites and (B) land-based site density per country (+ GDP per capita partial correlation)
 # Densidade: sites cuja coordenada cai em terra (Natural Earth 1:50m) nos 28 países/territórios,
 # área terrestre do Banco Mundial (AG.LND.TOTL.K2, 2021) — mesmo método de densidade_por_pais.csv
 source("scripts/00_theme.R")
@@ -50,7 +50,15 @@ pB <- ggplot(x, aes(sites_per_100k_km2, reorder(rot, sites_per_100k_km2))) +
 
 salvar((pA | pB) + plot_layout(widths = c(1.15, 1)) + tags, "Figure1", 12, 6.6)
 
-# GDP: partial correlation between density and GDP, controlling for land area (countries with GDP data)
-g <- d %>% left_join(d0[, c("iso3", "gdp_usd_2021")], by = "iso3") %>% filter(!is.na(gdp_usd_2021))
-r1 <- resid(lm(log(sites_per_100k_km2 + 0.1) ~ log(land_area_km2), g)); r2 <- resid(lm(log(gdp_usd_2021) ~ log(land_area_km2), g))
-t <- cor.test(r1, r2); cat(sprintf("04 | GDP partial r = %.2f, P = %.2f, n = %d\n", t$estimate, t$p.value, nrow(g)))
+# GDP: partial correlations between density and GDP, controlling for land area (countries with GDP data; Cuba has none)
+# GDP per capita (NY.GDP.PCAP.CD) is the measure used by Moussy et al. (2022) and reported in the text;
+# total GDP (NY.GDP.MKTP.CD) is kept as a check (reported in the response to reviewers)
+g <- d %>% left_join(d0[, c("iso3", "gdp_usd_2021", "gdp_per_capita_usd_2021")], by = "iso3") %>%
+  filter(!is.na(gdp_usd_2021), !is.na(gdp_per_capita_usd_2021))
+r1 <- resid(lm(log(sites_per_100k_km2 + 0.1) ~ log(land_area_km2), g))
+for (v in c("gdp_per_capita_usd_2021", "gdp_usd_2021")) {
+  r2 <- resid(lm(log(g[[v]]) ~ log(g$land_area_km2)))
+  t <- cor.test(r1, r2)
+  cat(sprintf("04 | %s: partial r = %.2f, P = %.2f, n = %d\n",
+              ifelse(v == "gdp_usd_2021", "GDP (total)", "GDP per capita"), t$estimate, t$p.value, nrow(g)))
+}

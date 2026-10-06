@@ -29,7 +29,7 @@ R packages: dplyr, ggplot2, patchwork, sf, rnaturalearth (+ rnaturalearthdata, r
 | `01_fix_site_coordinates.R` | Corrects site coordinates (see below) | `data/intermediate/`, `logs/LOG_coordinates_site_data.csv` |
 | `02_clean_spreadsheets.R` | Harmonizes project IDs across tables, fixes shifted cells, removes duplicated rows, fills missing taxonomy | `data/*.csv`, `logs/LOG_cleaning_spreadsheets.csv` |
 | `03_ecoregions.R` | Assigns each site to a terrestrial and a marine ecoregion; taxonomic composition per ecoregion | `data/site_ecoregions.csv`, `results/*_ecoregions_composition.csv` |
-| `04_density_figure1.R` | Land-based site density per country; GDP partial correlation; Figure 1 | `results/land_site_density_by_country.csv`, `figures/Figure1` |
+| `04_density_figure1.R` | Land-based site density per country; partial correlation with GDP per capita (and total GDP); Figure 1 | `results/land_site_density_by_country.csv`, `figures/Figure1` |
 | `05_sampbias/` | Spatial sampling-bias models (sampbias), land and sea, 4 chains × 10⁶ iterations, with and without one record per project per cell | `results/sampbias_results.csv` |
 | `06_figure2_sampbias.R` | Figure 2 | `figures/Figure2` |
 | `07_figure3_figureS1.R` | Variable types per taxonomic group (Fig. 3) and abiotic variables (Fig. S1) | `figures/Figure3`, `figures/FigureS1` |
@@ -50,7 +50,7 @@ Tables used in all analyses (outputs of scripts 01–02):
 | `groups_time.csv` | Species recorded in the projects' publications, with taxonomy, maximum lifespan and monitoring duration |
 | `authors_data.csv`, `publications_data.csv` | Contributing researchers (no e-mails) and publications of each project |
 | `site_ecoregions.csv` | Terrestrial (WWF) and marine (MEOW) ecoregion of each site |
-| `country_land_area_gdp.csv` | Land area and GDP (World Bank, 2021) of the 28 countries and territories with land in the study region |
+| `country_land_area_gdp.csv` | Land area, GDP and GDP per capita (World Bank, 2021; AG.LND.TOTL.K2, NY.GDP.MKTP.CD, NY.GDP.PCAP.CD) of the 28 countries and territories with land in the study region |
 | `research_institutions_ror_lac.csv` | Research institutions from the Research Organization Registry (ROR API v2, accessed 22 Sep 2026) |
 | `oceanic_islands_ne10m.rds` | Oceanic islands added to the marine study region of sampbias |
 
