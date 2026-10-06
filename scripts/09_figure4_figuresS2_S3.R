@@ -40,19 +40,21 @@ painel <- function(comp, shp, col, destaques) {
   lab <- shp %>% filter(rank <= 20) %>% group_by(eco, rank) %>% summarise(.groups = "drop") %>%
     mutate(pt = st_point_on_surface(geometry)) %>% st_drop_geometry()
   lab[c("X", "Y")] <- st_coordinates(lab$pt)
+  for (i in seq_len(nrow(lab))) for (j in seq_len(i - 1))   # números muito próximos: afasta o segundo para a direita
+    if (abs(lab$X[i] - lab$X[j]) < 2.5 && abs(lab$Y[i] - lab$Y[j]) < 2) lab$X[i] <- lab$X[j] + 2.8
   g <- ggplot() + geom_sf(data = mundo, fill = "grey90", colour = NA) +
-    geom_sf(data = todas, fill = "grey85", colour = "black", linewidth = 0.1) +
-    geom_sf(aes(fill = dominante), data = shp, colour = "black", linewidth = 0.1) +
-    geom_text(aes(X, Y, label = rank), data = lab, size = 4.6, family = FONTE) +
+    geom_sf(data = todas, fill = "grey86", colour = NA) +                                # sem dados: cinza claro, sem linhas (como na original)
+    geom_sf(aes(fill = dominante), data = shp, colour = "grey15", linewidth = 0.06) +   # linhas finas só nas ecorregiões com dados
+    geom_text(aes(X, Y, label = rank), data = lab, size = 6.3, family = FONTE) +
     # legenda com todos os grupos (retângulos de área zero, só para a legenda)
     geom_rect(aes(xmin = -60, xmax = -60, ymin = 0, ymax = 0, fill = g), data = data.frame(g = grupos), inherit.aes = FALSE)
   for (k in seq_len(nrow(destaques))) {
-    dk <- destaques[k, ]; r <- 10; d <- comp %>% filter(eco == dk$eco); lk <- lab[lab$eco == dk$eco, ]
+    dk <- destaques[k, ]; r <- 11.5; d <- comp %>% filter(eco == dk$eco); lk <- lab[lab$eco == dk$eco, ]
     ang <- atan2(lk$Y - dk$y, lk$X - dk$x)
     g <- g + annotate("segment", x = dk$x + r * cos(ang), y = dk$y + r * sin(ang), xend = lk$X, yend = lk$Y, linewidth = 0.4) +
-      annotation_custom(ggplotGrob(donut(d)), xmin = dk$x - r, xmax = dk$x + r, ymin = dk$y - r, ymax = dk$y + r) +
+      annotation_custom(ggplotGrob(donut(d, base = 4.6)), xmin = dk$x - r, xmax = dk$x + r, ymin = dk$y - r, ymax = dk$y + r) +
       annotate("text", x = dk$x, y = dk$y + r + 0.4, label = paste0(d$rank[1], ".\n", quebra(dk$eco)), vjust = 0,
-               size = 3.9, family = FONTE, colour = "grey30", lineheight = 0.9)
+               size = 5.2, family = FONTE, colour = "grey30", lineheight = 0.9)
   }
   g + escala +
     scale_x_continuous(breaks = seq(-120, -40, 20), labels = function(x) paste0(abs(x), "°W")) +
@@ -64,7 +66,7 @@ painel <- function(comp, shp, col, destaques) {
 
 # posições dos donuts (centro, em graus) — as mesmas da Figura 4 anterior
 dT <- data.frame(eco = c("Caribbean shrublands", "Tocantins/Pindare moist forests", "Purus varzeá", "Bahia interior forests", "Araucaria moist forests"),
-                 x = c(-60, -36, -99, -17, -30), y = c(30, 4, -11, -22, -49))
+                 x = c(-60, -36, -99, -17, -30), y = c(27.5, 4, -11, -22, -49))
 dM <- data.frame(eco = c("Eastern Caribbean", "Nicoya", "Guianan", "Rio Grande", "Araucanian"),
                  x = c(-39, -104, -12, -23, -100), y = c(22, -10, -9, -45, -48))
 sh <- list(teow = st_make_valid(st_set_crs(read_sf("data/shapefiles/wwf_terr_ecos.shp")[, "ECO_NAME"], 4326)),
