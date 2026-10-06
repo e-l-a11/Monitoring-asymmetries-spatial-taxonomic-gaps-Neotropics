@@ -22,16 +22,18 @@ donut <- function(d, base = 3.2) {
   d <- d %>% mutate(grupo = factor(grupo, levels = grupos)) %>% arrange(grupo) %>%
     mutate(rot = ifelse(round(pct) >= sort(round(pct), decreasing = TRUE)[min(2, n())] & pct >= 10, paste0(round(pct), "%"), ""))   # 2 maiores (empates entram), só >= 10%, como na original
   ggplot(d, aes(x = 2, y = n, fill = grupo)) +
-    geom_col(colour = "white", linewidth = 0.3, width = 1) +
+    geom_col(colour = "white", linewidth = 0.5, width = 0.9) +
     geom_text(aes(x = 2.05, label = rot), position = position_stack(vjust = 0.5), size = base, family = FONTE, colour = "grey10") +
-    coord_polar(theta = "y", start = 0) + xlim(c(0.9, 2.5)) + escala + theme_void() + theme(legend.position = "none")
+    coord_polar(theta = "y", start = 0) + xlim(c(0.5, 2.5)) + escala + theme_void() + theme(legend.position = "none")
 }
 
 xl <- c(-122, -2); yl <- c(-60, 42)
 w0 <- ne_countries(scale = 50, returnclass = "sf"); w0 <- w0[w0$continent %in% c("North America", "South America"), ]   # só as Américas, como na original
 mundo <- st_crop(st_make_valid(w0), c(xmin = xl[1], xmax = xl[2], ymin = yl[1], ymax = yl[2]))
+w10 <- ne_countries(scale = 10, returnclass = "sf"); w10 <- w10[w10$continent %in% c("North America", "South America"), ]
+terra10 <- st_crop(st_make_valid(w10), c(xmin = xl[1], xmax = xl[2], ymin = yl[1], ymax = yl[2]))   # costa detalhada para o painel marinho
 
-painel <- function(comp, shp, col, destaques) {
+painel <- function(comp, shp, col, destaques, terra_por_cima = FALSE) {
   dom <- comp %>% group_by(eco) %>% slice_max(n, n = 1, with_ties = FALSE) %>% ungroup() %>% select(eco, dominante = grupo, rank)
   todas <- shp %>% rename(eco = all_of(col)) %>% st_make_valid() %>%
     st_crop(c(xmin = xl[1], xmax = xl[2], ymin = yl[1], ymax = yl[2]))   # todas as ecorregiões (as sem dados ficam em cinza), como na original
@@ -42,19 +44,20 @@ painel <- function(comp, shp, col, destaques) {
   lab[c("X", "Y")] <- st_coordinates(lab$pt)
   for (i in seq_len(nrow(lab))) for (j in seq_len(i - 1))   # números muito próximos: afasta o segundo para a direita
     if (abs(lab$X[i] - lab$X[j]) < 2.5 && abs(lab$Y[i] - lab$Y[j]) < 2) lab$X[i] <- lab$X[j] + 2.8
-  g <- ggplot() + geom_sf(data = mundo, fill = "grey90", colour = NA) +
-    geom_sf(data = todas, fill = "grey86", colour = NA) +                                # sem dados: cinza claro, sem linhas (como na original)
-    geom_sf(aes(fill = dominante), data = shp, colour = "grey15", linewidth = 0.06) +   # linhas finas só nas ecorregiões com dados
-    geom_text(aes(X, Y, label = rank), data = lab, size = 6.3, family = FONTE) +
+  g <- ggplot() + geom_sf(data = mundo, fill = "#EBEBEB", colour = NA) +                 # terra em cinza bem claro, sem bordas (como na original)
+    geom_sf(data = todas, fill = "#EBEBEB", colour = NA) +                                 # sem dados: mesmo cinza, sem linhas
+    geom_sf(aes(fill = dominante), data = shp, colour = "white", linewidth = 0.04) +        # divisões em linhas brancas finíssimas
+    { if (terra_por_cima) geom_sf(data = terra10, fill = "#EBEBEB", colour = NA) } +         # mar: terra por cima, cor só na faixa marinha (como na original)
+    geom_text(aes(X, Y, label = rank), data = lab, size = 5, family = FONTE) +
     # legenda com todos os grupos (retângulos de área zero, só para a legenda)
     geom_rect(aes(xmin = -60, xmax = -60, ymin = 0, ymax = 0, fill = g), data = data.frame(g = grupos), inherit.aes = FALSE)
   for (k in seq_len(nrow(destaques))) {
-    dk <- destaques[k, ]; r <- 11.5; d <- comp %>% filter(eco == dk$eco); lk <- lab[lab$eco == dk$eco, ]
+    dk <- destaques[k, ]; r <- 10; d <- comp %>% filter(eco == dk$eco); lk <- lab[lab$eco == dk$eco, ]
     ang <- atan2(lk$Y - dk$y, lk$X - dk$x)
     g <- g + annotate("segment", x = dk$x + r * cos(ang), y = dk$y + r * sin(ang), xend = lk$X, yend = lk$Y, linewidth = 0.4) +
-      annotation_custom(ggplotGrob(donut(d, base = 4.6)), xmin = dk$x - r, xmax = dk$x + r, ymin = dk$y - r, ymax = dk$y + r) +
+      annotation_custom(ggplotGrob(donut(d, base = 3.4)), xmin = dk$x - r, xmax = dk$x + r, ymin = dk$y - r, ymax = dk$y + r) +
       annotate("text", x = dk$x, y = dk$y + r + 0.4, label = paste0(d$rank[1], ".\n", quebra(dk$eco)), vjust = 0,
-               size = 5.2, family = FONTE, colour = "grey30", lineheight = 0.9)
+               size = 4.2, family = FONTE, colour = "grey40", lineheight = 0.9)
   }
   g + escala +
     scale_x_continuous(breaks = seq(-120, -40, 20), labels = function(x) paste0(abs(x), "°W")) +
@@ -72,7 +75,7 @@ dM <- data.frame(eco = c("Eastern Caribbean", "Nicoya", "Guianan", "Rio Grande",
 sh <- list(teow = st_make_valid(st_set_crs(read_sf("data/shapefiles/wwf_terr_ecos.shp")[, "ECO_NAME"], 4326)),
            meow = st_make_valid(st_set_crs(read_sf("data/shapefiles/meow_ecos.shp")[, c("ECOREGION", "REALM")], 4326)))
 pA <- painel(terr, sh$teow, "ECO_NAME", dT)
-pB <- painel(mar, sh$meow, "ECOREGION", dM)
+pB <- painel(mar, sh$meow, "ECOREGION", dM, terra_por_cima = TRUE)
 salvar((pA / (pB + theme(legend.position = "none"))) + plot_layout(guides = "collect") + tags, "Figure4", 15, 19.3)
 
 
