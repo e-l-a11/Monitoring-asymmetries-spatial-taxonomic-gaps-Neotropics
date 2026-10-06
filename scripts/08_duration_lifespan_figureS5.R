@@ -1,4 +1,4 @@
-# 08. Figure S4 + números do texto: duração do projeto x longevidade das espécies (nível de projeto)
+# 08. Figure S5 + números do texto: duração do projeto x longevidade das espécies (nível de projeto)
 # Método (Métodos do texto): para cada projeto com longevidade de pelo menos uma espécie,
 # log10(mediana da duração) ~ log10(mediana da longevidade máxima das espécies), OLS.
 # Robustez: bootstrap de projetos (5.000), Spearman, sem o projeto com mais espécies (ATDN).
@@ -32,4 +32,4 @@ fig <- ggplot(p, aes(ls, dur)) +
   annotate("text", x = min(p$ls), y = max(p$dur) * 1.1, hjust = 0, vjust = 1, family = FONTE, size = 3.6, colour = "grey25",
            label = sprintf("slope = %.2f (95%% CI %.2f to %.2f)\nP = %.2f, R² = %.2f, n = %d projects", s[2, 1], ci[1], ci[2], s[2, 4], summary(m)$r.squared, nrow(p))) +
   labs(x = "Median maximum lifespan of monitored species (years, log scale)", y = "Median project duration (years, log scale)") + tema()
-salvar(fig, "FigureS4", 7.5, 5)
+salvar(fig, "FigureS5", 7.5, 5)

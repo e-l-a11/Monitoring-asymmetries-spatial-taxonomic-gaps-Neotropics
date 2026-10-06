@@ -1,5 +1,5 @@
-# 07. Figure 3 (variable types per taxonomic group; A terrestrial, B marine) and Figure S1 (abiotic variables)
-# Figura 3: proporção de cada tipo de variável biótica por grupo taxonômico, (A) marinho e (B) terrestre
+# 07. Figure S1 (variable types per taxonomic group; A terrestrial, B marine) and Figure S2 (abiotic variables)
+# Figura S1 (era Figura 3): proporção de cada tipo de variável biótica por grupo taxonômico, (A) marinho e (B) terrestre
 # Fonte: variable.data; variáveis bióticas; exclui métrica "na" (parasitas ficam de fora: todas "na")
 source("scripts/00_theme.R")
 v <- read.csv("data/variable_data.csv", check.names = FALSE, strip.white = TRUE)
@@ -25,12 +25,12 @@ painel <- function(reg, titulo) {
     tema() + theme(panel.grid.major.y = element_blank(), plot.title.position = "plot")
 }
 p <- (painel("terrestrial", "(A) Terrestrial") + theme(legend.position = "none") | painel("marine", "(B) Marine"))   # v6: terrestre (A), marinho (B), como nas outras figuras
-salvar(p, "Figure3", 12, 5)
+salvar(p, "FigureS1", 12, 5)
 for (r in c("marine", "terrestrial")) { x <- v %>% filter(regiao == r)
   cat(r, ": grupos", n_distinct(x$grupo), "| tipos", n_distinct(x$metrica), "| máx. tipos por grupo",
       max(tapply(x$metrica, x$grupo, n_distinct)), "\n") }
 
-# Figura S1: número de projetos que medem cada tipo de variável abiótica (terrestre e marinho juntos)
+# Figura S2 (era S1): número de projetos que medem cada tipo de variável abiótica (terrestre e marinho juntos)
 v <- read.csv("data/variable_data.csv", check.names = FALSE, strip.white = TRUE)
 names(v) <- trimws(names(v)); v <- v[, names(v) != ""]
 x <- v %>% filter(tolower(Variable.Type) == "abiotic", !Metrics %in% c("na", "")) %>%
@@ -42,4 +42,4 @@ p <- ggplot(x, aes(n, factor(Metrics, levels = Metrics))) +
   scale_x_continuous(expand = expansion(mult = c(0, 0.08))) +
   labs(x = "Number of monitoring projects", y = NULL) +
   tema() + theme(panel.grid.major.y = element_blank())
-salvar(p, "FigureS1", 7, 3.6)
+salvar(p, "FigureS2", 7, 3.6)

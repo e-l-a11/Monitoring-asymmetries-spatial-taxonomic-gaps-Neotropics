@@ -1,6 +1,6 @@
 # Monitoring asymmetries leave spatial and taxonomic gaps in the Neotropics
 
-Data and code for: Abbad, E. L., Dambros, C., Cronemberger, C., Severo, L. W., Peixoto, T. W. & Bender, M. *Monitoring asymmetries leave spatial and taxonomic gaps in the Neotropics* (manuscript).
+Data and code for the manuscript *Monitoring asymmetries leave spatial and taxonomic gaps in the Neotropics* (under review).
 
 The repository reproduces every table, number and figure of the paper from the compiled spreadsheets of the Neotropical Networks initiative (121 monitoring projects, 5,037 sites, 44 countries and territories).
 
@@ -13,7 +13,7 @@ Rscript run_all.R            # everything except the sampbias MCMC (uses results
 Rscript run_all.R sampbias   # also re-runs the 16 sampbias chains (~25 min on 8 cores)
 ```
 
-Figure 4 and the recomputation of `data/site_ecoregions.csv` need the ecoregion maps, which are not redistributed here. Download them and place the shapefiles in `data/shapefiles/` with these names:
+Figure 3 and the recomputation of `data/site_ecoregions.csv` need the ecoregion maps, which are not redistributed here. Download them and place the shapefiles in `data/shapefiles/` with these names:
 
 - `wwf_terr_ecos.shp` (+ .shx, .dbf): WWF Terrestrial Ecoregions of the World, distributed by WWF (Olson et al. 2001, BioScience 51: 933–938, https://doi.org/10.1641/0006-3568(2001)051[0933:TEOTWA]2.0.CO;2)
 - `meow_ecos.shp` (+ .shx, .dbf, .prj): Marine Ecoregions of the World, distributed by WWF/TNC (Spalding et al. 2007, BioScience 57: 573–583, https://doi.org/10.1641/B570707)
@@ -32,9 +32,9 @@ R packages: dplyr, ggplot2, patchwork, sf, rnaturalearth (+ rnaturalearthdata, r
 | `04_density_figure1.R` | Land-based site density per country; partial correlation with GDP per capita (and total GDP); Figure 1 | `results/land_site_density_by_country.csv`, `figures/Figure1` |
 | `05_sampbias/` | Spatial sampling-bias models (sampbias), land and sea, 4 chains × 10⁶ iterations, with and without one record per project per cell | `results/sampbias_results.csv` |
 | `06_figure2_sampbias.R` | Figure 2 | `figures/Figure2` |
-| `07_figure3_figureS1.R` | Variable types per taxonomic group (Fig. 3) and abiotic variables (Fig. S1) | `figures/Figure3`, `figures/FigureS1` |
-| `08_duration_lifespan_figureS4.R` | Project-level regression of monitoring duration on species lifespan; Figure S4 | `results/duration_lifespan_*.csv`, `figures/FigureS4` |
-| `09_figure4_figuresS2_S3.R` | Figure 4 (ecoregion maps and donuts) and Figures S2–S3 | `figures/Figure4`, `figures/FigureS2`, `figures/FigureS3` |
+| `07_figureS1_figureS2.R` | Variable types per taxonomic group (Fig. S1) and abiotic variables (Fig. S2) | `figures/FigureS1`, `figures/FigureS2` |
+| `08_duration_lifespan_figureS5.R` | Project-level regression of monitoring duration on species lifespan; Figure S5 | `results/duration_lifespan_*.csv`, `figures/FigureS5` |
+| `09_figure3_figuresS3_S4.R` | Figure 3 (ecoregion maps and donuts) and Figures S3–S4 | `figures/Figure3`, `figures/FigureS3`, `figures/FigureS4` |
 
 ## Data (`data/`)
 

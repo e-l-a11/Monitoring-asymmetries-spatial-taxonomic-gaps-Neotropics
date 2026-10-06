@@ -1,4 +1,4 @@
-# 03. Ecoregion of each site and taxonomic composition of the ecoregions (Fig. 4, Figs. S2-S3, Table S4)
+# 03. Ecoregion of each site and taxonomic composition of the ecoregions (Fig. 3, Figs. S3-S4, Table S4)
 # Ecorregiões com o site.data v4 (coordenadas corrigidas)
 # 1) site_eco_v5.csv: cada site -> ecorregião terrestre (WWF TEOW, ECO_NAME) e marinha (MEOW, ECOREGION)
 #    Mesmo método do site_eco antigo (todos os sites cruzados com os dois mapas). Validação: o mesmo join

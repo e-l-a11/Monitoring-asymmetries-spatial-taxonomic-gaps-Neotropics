@@ -1,7 +1,7 @@
-# 09. Figure 4 (maps + donuts) and Figures S2-S3. Requires the ecoregion shapefiles in data/shapefiles/ (see README).
+# 09. Figure 3 (maps + donuts) and Figures S3-S4. Requires the ecoregion shapefiles in data/shapefiles/ (see README).
 # Figura 4: mesmo layout da Figura4 anterior (montagem das Figs. 5 e 6 originais), com os dados das planilhas finais.
 # Diferenças em relação ao rascunho v4: fundo só com as Américas; % só nas 2 maiores fatias (empates incluídos), como na original.
-# Figura 4 (A terrestre, B marinho) + Figs. S2 e S3 (top 20 ecorregiões em donuts), com o site.data v4
+# Figura 3 (A terrestre, B marinho) + Figs. S3 e S4 (top 20 ecorregiões em donuts), com o site.data v4
 # Composição: ecorregioes_v4.R (rodar antes). Mesmo layout da Figura 4 anterior: ecorregiões coloridas
 # pelo grupo dominante, top 20 numeradas, 5 donuts de destaque por painel (as mesmas ecorregiões de antes).
 source("scripts/00_theme.R")
@@ -76,10 +76,10 @@ sh <- list(teow = st_make_valid(st_set_crs(read_sf("data/shapefiles/wwf_terr_eco
            meow = st_make_valid(st_set_crs(read_sf("data/shapefiles/meow_ecos.shp")[, c("ECOREGION", "REALM")], 4326)))
 pA <- painel(terr, sh$teow, "ECO_NAME", dT)
 pB <- painel(mar, sh$meow, "ECOREGION", dM, terra_por_cima = TRUE)
-salvar((pA / (pB + theme(legend.position = "none"))) + plot_layout(guides = "collect") + tags, "Figure4", 15, 19.3)
+salvar((pA / (pB + theme(legend.position = "none"))) + plot_layout(guides = "collect") + tags, "Figure3", 15, 19.3)
 
 
-# S2 / S3: top 20 em donuts
+# S3 / S4: top 20 em donuts
 grade <- function(comp, nome) {
   x <- comp %>% filter(rank <= 20) %>% mutate(tit = factor(paste0(rank, ".\n", quebra(eco, 24)))) %>%
     mutate(tit = reorder(tit, rank), grupo = factor(grupo, levels = grupos)) %>% group_by(tit) %>% arrange(grupo, .by_group = TRUE) %>%
@@ -94,5 +94,5 @@ grade <- function(comp, nome) {
           legend.title = element_text(size = 12), legend.text = element_text(size = 11))
   salvar(p, nome, 11, 9.5)
 }
-grade(terr, "FigureS2"); grade(mar, "FigureS3")
+grade(terr, "FigureS3"); grade(mar, "FigureS4")
 cat("ok\n")
