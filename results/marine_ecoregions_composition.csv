@@ -1,0 +1,188 @@
+"eco","grupo","n","total","pct","rank"
+"Western Caribbean","fishes",2263,8455,26.8,1
+"Western Caribbean","benthos",1968,8455,23.3,1
+"Western Caribbean","corals",1784,8455,21.1,1
+"Western Caribbean","reptiles",538,8455,6.4,1
+"Western Caribbean","insects",486,8455,5.7,1
+"Western Caribbean","mammals",486,8455,5.7,1
+"Western Caribbean","amphibians",324,8455,3.8,1
+"Western Caribbean","birds",324,8455,3.8,1
+"Western Caribbean","plants",192,8455,2.3,1
+"Western Caribbean","seagrass",45,8455,0.5,1
+"Western Caribbean","macroinvertebrates",30,8455,0.4,1
+"Western Caribbean","algae",15,8455,0.2,1
+"Greater Antilles","fishes",3012,8436,35.7,2
+"Greater Antilles","benthos",2709,8436,32.1,2
+"Greater Antilles","corals",2408,8436,28.5,2
+"Greater Antilles","reptiles",301,8436,3.6,2
+"Greater Antilles","plants",4,8436,0,2
+"Greater Antilles","arthropods",2,8436,0,2
+"Southeastern Brazil","plants",3377,6625,51,3
+"Southeastern Brazil","mammals",834,6625,12.6,3
+"Southeastern Brazil","birds",797,6625,12,3
+"Southeastern Brazil","fungus",441,6625,6.7,3
+"Southeastern Brazil","insects",403,6625,6.1,3
+"Southeastern Brazil","macroinvertebrates",328,6625,5,3
+"Southeastern Brazil","reptiles",203,6625,3.1,3
+"Southeastern Brazil","crustaceans",76,6625,1.1,3
+"Southeastern Brazil","amphibians",55,6625,0.8,3
+"Southeastern Brazil","fishes",42,6625,0.6,3
+"Southeastern Brazil","plankton",31,6625,0.5,3
+"Southeastern Brazil","parasites",20,6625,0.3,3
+"Southeastern Brazil","corals",12,6625,0.2,3
+"Southeastern Brazil","zooplankton",6,6625,0.1,3
+"Eastern Caribbean","fishes",1820,5136,35.4,4
+"Eastern Caribbean","benthos",1638,5136,31.9,4
+"Eastern Caribbean","corals",1456,5136,28.3,4
+"Eastern Caribbean","reptiles",182,5136,3.5,4
+"Eastern Caribbean","birds",10,5136,0.2,4
+"Eastern Caribbean","insects",10,5136,0.2,4
+"Eastern Caribbean","mammals",10,5136,0.2,4
+"Eastern Caribbean","plants",10,5136,0.2,4
+"Amazonia","birds",1376,3604,38.2,5
+"Amazonia","plants",1159,3604,32.2,5
+"Amazonia","mammals",582,3604,16.1,5
+"Amazonia","insects",293,3604,8.1,5
+"Amazonia","fishes",82,3604,2.3,5
+"Amazonia","crustaceans",43,3604,1.2,5
+"Amazonia","reptiles",41,3604,1.1,5
+"Amazonia","algae",13,3604,0.4,5
+"Amazonia","plankton",13,3604,0.4,5
+"Amazonia","arthropods",2,3604,0.1,5
+"Southwestern Caribbean","fishes",696,2926,23.8,6
+"Southwestern Caribbean","benthos",556,2926,19,6
+"Southwestern Caribbean","corals",512,2926,17.5,6
+"Southwestern Caribbean","birds",420,2926,14.4,6
+"Southwestern Caribbean","mammals",284,2926,9.7,6
+"Southwestern Caribbean","plants",206,2926,7,6
+"Southwestern Caribbean","amphibians",140,2926,4.8,6
+"Southwestern Caribbean","reptiles",60,2926,2.1,6
+"Southwestern Caribbean","seagrass",24,2926,0.8,6
+"Southwestern Caribbean","macroinvertebrates",16,2926,0.5,6
+"Southwestern Caribbean","algae",8,2926,0.3,6
+"Southwestern Caribbean","arthropods",4,2926,0.1,6
+"Eastern Brazil","birds",489,2872,17,7
+"Eastern Brazil","fishes",432,2872,15,7
+"Eastern Brazil","insects",416,2872,14.5,7
+"Eastern Brazil","mammals",315,2872,11,7
+"Eastern Brazil","benthos",288,2872,10,7
+"Eastern Brazil","plants",285,2872,9.9,7
+"Eastern Brazil","corals",280,2872,9.7,7
+"Eastern Brazil","reptiles",185,2872,6.4,7
+"Eastern Brazil","fungus",95,2872,3.3,7
+"Eastern Brazil","crustaceans",77,2872,2.7,7
+"Eastern Brazil","amphibians",10,2872,0.3,7
+"Floridian","fishes",964,2620,36.8,8
+"Floridian","benthos",828,2620,31.6,8
+"Floridian","corals",736,2620,28.1,8
+"Floridian","reptiles",92,2620,3.5,8
+"Bahamian","fishes",778,2164,36,9
+"Bahamian","benthos",693,2164,32,9
+"Bahamian","corals",616,2164,28.5,9
+"Bahamian","reptiles",77,2164,3.6,9
+"Northeastern Brazil","fishes",600,1996,30.1,10
+"Northeastern Brazil","benthos",540,1996,27.1,10
+"Northeastern Brazil","corals",496,1996,24.8,10
+"Northeastern Brazil","reptiles",204,1996,10.2,10
+"Northeastern Brazil","birds",68,1996,3.4,10
+"Northeastern Brazil","mammals",44,1996,2.2,10
+"Northeastern Brazil","plants",30,1996,1.5,10
+"Northeastern Brazil","crustaceans",12,1996,0.6,10
+"Northeastern Brazil","insects",2,1996,0.1,10
+"Southern Caribbean","fishes",628,1802,34.9,11
+"Southern Caribbean","benthos",540,1802,30,11
+"Southern Caribbean","corals",480,1802,26.6,11
+"Southern Caribbean","plants",78,1802,4.3,11
+"Southern Caribbean","reptiles",60,1802,3.3,11
+"Southern Caribbean","insects",16,1802,0.9,11
+"Rio Grande","plants",1241,1675,74.1,12
+"Rio Grande","insects",86,1675,5.1,12
+"Rio Grande","mammals",84,1675,5,12
+"Rio Grande","birds",76,1675,4.5,12
+"Rio Grande","fungus",76,1675,4.5,12
+"Rio Grande","amphibians",38,1675,2.3,12
+"Rio Grande","reptiles",36,1675,2.1,12
+"Rio Grande","fishes",30,1675,1.8,12
+"Rio Grande","crustaceans",8,1675,0.5,12
+"Fernando de Naronha and Atoll das Rocas","fishes",380,1129,33.7,13
+"Fernando de Naronha and Atoll das Rocas","benthos",342,1129,30.3,13
+"Fernando de Naronha and Atoll das Rocas","corals",312,1129,27.6,13
+"Fernando de Naronha and Atoll das Rocas","reptiles",86,1129,7.6,13
+"Fernando de Naronha and Atoll das Rocas","birds",6,1129,0.5,13
+"Fernando de Naronha and Atoll das Rocas","crustaceans",3,1129,0.3,13
+"Panama Bight","plants",314,660,47.6,14
+"Panama Bight","birds",117,660,17.7,14
+"Panama Bight","mammals",78,660,11.8,14
+"Panama Bight","fishes",58,660,8.8,14
+"Panama Bight","amphibians",46,660,7,14
+"Panama Bight","fungus",34,660,5.2,14
+"Panama Bight","reptiles",7,660,1.1,14
+"Panama Bight","arthropods",6,660,0.9,14
+"Guianan","birds",136,443,30.7,15
+"Guianan","mammals",126,443,28.4,15
+"Guianan","plants",97,443,21.9,15
+"Guianan","reptiles",40,443,9,15
+"Guianan","insects",24,443,5.4,15
+"Guianan","amphibians",20,443,4.5,15
+"Nicoya","fishes",186,200,93,16
+"Nicoya","birds",6,200,3,16
+"Nicoya","mammals",4,200,2,16
+"Nicoya","amphibians",2,200,1,16
+"Nicoya","plants",2,200,1,16
+"Chiloense","plants",52,124,41.9,17
+"Chiloense","birds",20,124,16.1,17
+"Chiloense","fishes",20,124,16.1,17
+"Chiloense","arthropods",16,124,12.9,17
+"Chiloense","mammals",12,124,9.7,17
+"Chiloense","crustaceans",4,124,3.2,17
+"Araucanian","plants",28,82,34.1,18
+"Araucanian","fishes",22,82,26.8,18
+"Araucanian","birds",10,82,12.2,18
+"Araucanian","arthropods",8,82,9.8,18
+"Araucanian","insects",6,82,7.3,18
+"Araucanian","mammals",6,82,7.3,18
+"Araucanian","crustaceans",2,82,2.4,18
+"Channels and Fjords of Southern Chile","plants",47,82,57.3,19
+"Channels and Fjords of Southern Chile","fishes",16,82,19.5,19
+"Channels and Fjords of Southern Chile","birds",8,82,9.8,19
+"Channels and Fjords of Southern Chile","arthropods",7,82,8.5,19
+"Channels and Fjords of Southern Chile","mammals",3,82,3.7,19
+"Channels and Fjords of Southern Chile","crustaceans",1,82,1.2,19
+"Chiapas-Nicaragua","fishes",72,78,92.3,20
+"Chiapas-Nicaragua","plants",4,78,5.1,20
+"Chiapas-Nicaragua","arthropods",2,78,2.6,20
+"Eastern Galapagos Islands","fishes",72,72,100,21
+"Central Peru","plants",63,63,100,22
+"Western Galapagos Islands","fishes",62,62,100,23
+"Rio de la Plata","plants",24,57,42.1,24
+"Rio de la Plata","amphibians",9,57,15.8,24
+"Rio de la Plata","fishes",9,57,15.8,24
+"Rio de la Plata","insects",9,57,15.8,24
+"Rio de la Plata","birds",6,57,10.5,24
+"Guayaquil","fishes",32,56,57.1,25
+"Guayaquil","plants",20,56,35.7,25
+"Guayaquil","fungus",2,56,3.6,25
+"Guayaquil","mammals",2,56,3.6,25
+"Cocos Islands","fishes",48,48,100,26
+"Cortezian","fishes",44,44,100,27
+"Humboldtian","plants",24,37,64.9,28
+"Humboldtian","birds",5,37,13.5,28
+"Humboldtian","arthropods",4,37,10.8,28
+"Humboldtian","mammals",3,37,8.1,28
+"Humboldtian","crustaceans",1,37,2.7,28
+"Easter Island","fishes",34,34,100,29
+"Central Chile","plants",13,26,50,30
+"Central Chile","birds",5,26,19.2,30
+"Central Chile","arthropods",4,26,15.4,30
+"Central Chile","mammals",3,26,11.5,30
+"Central Chile","crustaceans",1,26,3.8,30
+"North Patagonian Gulfs","fishes",26,26,100,31
+"Northern Galapagos Islands","fishes",22,22,100,32
+"Trindade and Martin Vaz Islands","reptiles",16,22,72.7,33
+"Trindade and Martin Vaz Islands","birds",6,22,27.3,33
+"Patagonian Shelf","plants",10,12,83.3,34
+"Patagonian Shelf","arthropods",1,12,8.3,34
+"Patagonian Shelf","birds",1,12,8.3,34
+"Malvinas/Falklands","fishes",10,10,100,35
+"Mexican Tropical Pacific","plants",9,9,100,36
+"Uruguay-Buenos Aires Shelf","reptiles",8,8,100,37

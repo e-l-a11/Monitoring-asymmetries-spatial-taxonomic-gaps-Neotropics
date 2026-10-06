@@ -1,0 +1,7 @@
+data/shapefiles/
+data/intermediate/
+results/sampbias_runs/
+results/run_all.log
+.Rhistory
+.RData
+Rplots.pdf

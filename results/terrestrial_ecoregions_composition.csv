@@ -1,0 +1,398 @@
+"eco","grupo","n","total","pct","rank"
+"Serra do Mar coastal forests","plants",1839,3740,49.2,1
+"Serra do Mar coastal forests","mammals",594,3740,15.9,1
+"Serra do Mar coastal forests","birds",561,3740,15,1
+"Serra do Mar coastal forests","fungus",251,3740,6.7,1
+"Serra do Mar coastal forests","insects",198,3740,5.3,1
+"Serra do Mar coastal forests","reptiles",137,3740,3.7,1
+"Serra do Mar coastal forests","macroinvertebrates",73,3740,2,1
+"Serra do Mar coastal forests","crustaceans",32,3740,0.9,1
+"Serra do Mar coastal forests","amphibians",26,3740,0.7,1
+"Serra do Mar coastal forests","parasites",20,3740,0.5,1
+"Serra do Mar coastal forests","zooplankton",6,3740,0.2,1
+"Serra do Mar coastal forests","fishes",3,3740,0.1,1
+"Araucaria moist forests","plants",2701,3475,77.7,2
+"Araucaria moist forests","fungus",209,3475,6,2
+"Araucaria moist forests","mammals",193,3475,5.6,2
+"Araucaria moist forests","insects",169,3475,4.9,2
+"Araucaria moist forests","birds",118,3475,3.4,2
+"Araucaria moist forests","amphibians",37,3475,1.1,2
+"Araucaria moist forests","crustaceans",22,3475,0.6,2
+"Araucaria moist forests","fishes",15,3475,0.4,2
+"Araucaria moist forests","reptiles",11,3475,0.3,2
+"Madeira-Tapajós moist forests","birds",1633,2988,54.7,3
+"Madeira-Tapajós moist forests","mammals",576,2988,19.3,3
+"Madeira-Tapajós moist forests","plants",532,2988,17.8,3
+"Madeira-Tapajós moist forests","insects",172,2988,5.8,3
+"Madeira-Tapajós moist forests","fishes",69,2988,2.3,3
+"Madeira-Tapajós moist forests","amphibians",4,2988,0.1,3
+"Madeira-Tapajós moist forests","fungus",2,2988,0.1,3
+"Central American Atlantic moist forests","insects",462,2217,20.8,4
+"Central American Atlantic moist forests","mammals",462,2217,20.8,4
+"Central American Atlantic moist forests","reptiles",327,2217,14.7,4
+"Central American Atlantic moist forests","amphibians",308,2217,13.9,4
+"Central American Atlantic moist forests","birds",308,2217,13.9,4
+"Central American Atlantic moist forests","fishes",196,2217,8.8,4
+"Central American Atlantic moist forests","plants",154,2217,6.9,4
+"Tapajós-Xingu moist forests","plants",697,1648,42.3,5
+"Tapajós-Xingu moist forests","birds",523,1648,31.7,5
+"Tapajós-Xingu moist forests","mammals",272,1648,16.5,5
+"Tapajós-Xingu moist forests","insects",153,1648,9.3,5
+"Tapajós-Xingu moist forests","fishes",3,1648,0.2,5
+"Isthmian-Atlantic moist forests","birds",480,1197,40.1,6
+"Isthmian-Atlantic moist forests","mammals",324,1197,27.1,6
+"Isthmian-Atlantic moist forests","plants",184,1197,15.4,6
+"Isthmian-Atlantic moist forests","amphibians",160,1197,13.4,6
+"Isthmian-Atlantic moist forests","fishes",33,1197,2.8,6
+"Isthmian-Atlantic moist forests","arthropods",6,1197,0.5,6
+"Isthmian-Atlantic moist forests","macroinvertebrates",6,1197,0.5,6
+"Isthmian-Atlantic moist forests","algae",3,1197,0.3,6
+"Isthmian-Atlantic moist forests","reptiles",1,1197,0.1,6
+"Cerrado","birds",466,1183,39.4,7
+"Cerrado","macroinvertebrates",359,1183,30.3,7
+"Cerrado","mammals",136,1183,11.5,7
+"Cerrado","plants",122,1183,10.3,7
+"Cerrado","insects",88,1183,7.4,7
+"Cerrado","amphibians",6,1183,0.5,7
+"Cerrado","fishes",6,1183,0.5,7
+"Uatuma-Trombetas moist forests","birds",492,1024,48,8
+"Uatuma-Trombetas moist forests","plants",183,1024,17.9,8
+"Uatuma-Trombetas moist forests","mammals",170,1024,16.6,8
+"Uatuma-Trombetas moist forests","fishes",75,1024,7.3,8
+"Uatuma-Trombetas moist forests","insects",66,1024,6.4,8
+"Uatuma-Trombetas moist forests","reptiles",35,1024,3.4,8
+"Uatuma-Trombetas moist forests","arthropods",2,1024,0.2,8
+"Uatuma-Trombetas moist forests","amphibians",1,1024,0.1,8
+"Southwest Amazon moist forests","birds",533,1002,53.2,9
+"Southwest Amazon moist forests","plants",252,1002,25.1,9
+"Southwest Amazon moist forests","mammals",174,1002,17.4,9
+"Southwest Amazon moist forests","insects",31,1002,3.1,9
+"Southwest Amazon moist forests","amphibians",3,1002,0.3,9
+"Southwest Amazon moist forests","fishes",3,1002,0.3,9
+"Southwest Amazon moist forests","reptiles",3,1002,0.3,9
+"Southwest Amazon moist forests","fungus",2,1002,0.2,9
+"Southwest Amazon moist forests","arthropods",1,1002,0.1,9
+"Bahia coastal forests","birds",304,936,32.5,10
+"Bahia coastal forests","mammals",205,936,21.9,10
+"Bahia coastal forests","plants",130,936,13.9,10
+"Bahia coastal forests","reptiles",77,936,8.2,10
+"Bahia coastal forests","fungus",76,936,8.1,10
+"Bahia coastal forests","insects",56,936,6,10
+"Bahia coastal forests","fishes",46,936,4.9,10
+"Bahia coastal forests","crustaceans",34,936,3.6,10
+"Bahia coastal forests","amphibians",8,936,0.9,10
+"Purus varzeá","fishes",237,688,34.4,11
+"Purus varzeá","plants",158,688,23,11
+"Purus varzeá","birds",152,688,22.1,11
+"Purus varzeá","reptiles",85,688,12.4,11
+"Purus varzeá","mammals",48,688,7,11
+"Purus varzeá","insects",8,688,1.2,11
+"Purus-Madeira moist forests","birds",355,626,56.7,12
+"Purus-Madeira moist forests","mammals",114,626,18.2,12
+"Purus-Madeira moist forests","plants",85,626,13.6,12
+"Purus-Madeira moist forests","insects",48,626,7.7,12
+"Purus-Madeira moist forests","fishes",17,626,2.7,12
+"Purus-Madeira moist forests","amphibians",5,626,0.8,12
+"Purus-Madeira moist forests","macroinvertebrates",1,626,0.2,12
+"Purus-Madeira moist forests","reptiles",1,626,0.2,12
+"Guianan savanna","plants",394,606,65,13
+"Guianan savanna","birds",124,606,20.5,13
+"Guianan savanna","mammals",52,606,8.6,13
+"Guianan savanna","insects",26,606,4.3,13
+"Guianan savanna","fishes",10,606,1.7,13
+"Tocantins/Pindare moist forests","birds",349,605,57.7,14
+"Tocantins/Pindare moist forests","plants",86,605,14.2,14
+"Tocantins/Pindare moist forests","mammals",82,605,13.6,14
+"Tocantins/Pindare moist forests","insects",44,605,7.3,14
+"Tocantins/Pindare moist forests","fishes",21,605,3.5,14
+"Tocantins/Pindare moist forests","algae",13,605,2.1,14
+"Tocantins/Pindare moist forests","crustaceans",8,605,1.3,14
+"Tocantins/Pindare moist forests","arthropods",2,605,0.3,14
+"Alto Paraná Atlantic forests","plants",398,577,69,15
+"Alto Paraná Atlantic forests","birds",89,577,15.4,15
+"Alto Paraná Atlantic forests","mammals",42,577,7.3,15
+"Alto Paraná Atlantic forests","macroinvertebrates",37,577,6.4,15
+"Alto Paraná Atlantic forests","insects",5,577,0.9,15
+"Alto Paraná Atlantic forests","amphibians",3,577,0.5,15
+"Alto Paraná Atlantic forests","fishes",3,577,0.5,15
+"Bahia interior forests","insects",286,573,49.9,16
+"Bahia interior forests","macroinvertebrates",120,573,20.9,16
+"Bahia interior forests","plants",79,573,13.8,16
+"Bahia interior forests","birds",28,573,4.9,16
+"Bahia interior forests","mammals",24,573,4.2,16
+"Bahia interior forests","fungus",19,573,3.3,16
+"Bahia interior forests","reptiles",13,573,2.3,16
+"Bahia interior forests","amphibians",2,573,0.3,16
+"Bahia interior forests","crustaceans",2,573,0.3,16
+"Caribbean shrublands","fishes",502,551,91.1,17
+"Caribbean shrublands","reptiles",49,551,8.9,17
+"Juruá-Purus moist forests","fishes",216,441,49,18
+"Juruá-Purus moist forests","reptiles",165,441,37.4,18
+"Juruá-Purus moist forests","birds",38,441,8.6,18
+"Juruá-Purus moist forests","mammals",12,441,2.7,18
+"Juruá-Purus moist forests","plants",8,441,1.8,18
+"Juruá-Purus moist forests","insects",2,441,0.5,18
+"Guianan moist forests","mammals",114,367,31.1,19
+"Guianan moist forests","birds",98,367,26.7,19
+"Guianan moist forests","plants",73,367,19.9,19
+"Guianan moist forests","reptiles",40,367,10.9,19
+"Guianan moist forests","insects",22,367,6,19
+"Guianan moist forests","amphibians",20,367,5.4,19
+"Yucatán moist forests","fishes",330,363,90.9,20
+"Yucatán moist forests","reptiles",33,363,9.1,20
+"Xingu-Tocantins-Araguaia moist forests","birds",179,346,51.7,21
+"Xingu-Tocantins-Araguaia moist forests","plants",67,346,19.4,21
+"Xingu-Tocantins-Araguaia moist forests","mammals",53,346,15.3,21
+"Xingu-Tocantins-Araguaia moist forests","insects",47,346,13.6,21
+"Japurá-Solimoes-Negro moist forests","birds",114,341,33.4,22
+"Japurá-Solimoes-Negro moist forests","fishes",87,341,25.5,22
+"Japurá-Solimoes-Negro moist forests","reptiles",60,341,17.6,22
+"Japurá-Solimoes-Negro moist forests","plants",38,341,11.1,22
+"Japurá-Solimoes-Negro moist forests","mammals",36,341,10.6,22
+"Japurá-Solimoes-Negro moist forests","insects",6,341,1.8,22
+"Southern Atlantic mangroves","plants",88,310,28.4,23
+"Southern Atlantic mangroves","fishes",65,310,21,23
+"Southern Atlantic mangroves","crustaceans",47,310,15.2,23
+"Southern Atlantic mangroves","birds",45,310,14.5,23
+"Southern Atlantic mangroves","reptiles",35,310,11.3,23
+"Southern Atlantic mangroves","mammals",29,310,9.4,23
+"Southern Atlantic mangroves","macroinvertebrates",1,310,0.3,23
+"Uruguayan savanna","plants",80,238,33.6,24
+"Uruguayan savanna","birds",40,238,16.8,24
+"Uruguayan savanna","amphibians",30,238,12.6,24
+"Uruguayan savanna","fishes",30,238,12.6,24
+"Uruguayan savanna","insects",30,238,12.6,24
+"Uruguayan savanna","mammals",20,238,8.4,24
+"Uruguayan savanna","reptiles",8,238,3.4,24
+"Atlantic Coast restingas","reptiles",49,225,21.8,25
+"Atlantic Coast restingas","birds",48,225,21.3,25
+"Atlantic Coast restingas","mammals",48,225,21.3,25
+"Atlantic Coast restingas","fishes",34,225,15.1,25
+"Atlantic Coast restingas","plants",28,225,12.4,25
+"Atlantic Coast restingas","crustaceans",18,225,8,25
+"Amazon-Orinoco-Southern Caribbean mangroves","fishes",126,210,60,26
+"Amazon-Orinoco-Southern Caribbean mangroves","plants",50,210,23.8,26
+"Amazon-Orinoco-Southern Caribbean mangroves","crustaceans",23,210,11,26
+"Amazon-Orinoco-Southern Caribbean mangroves","reptiles",11,210,5.2,26
+"Rio Negro campinarana","birds",100,208,48.1,27
+"Rio Negro campinarana","plants",50,208,24,27
+"Rio Negro campinarana","mammals",36,208,17.3,27
+"Rio Negro campinarana","insects",16,208,7.7,27
+"Rio Negro campinarana","fishes",6,208,2.9,27
+"Hispaniolan moist forests","fishes",180,198,90.9,28
+"Hispaniolan moist forests","reptiles",18,198,9.1,28
+"Iquitos varzeá","plants",88,175,50.3,29
+"Iquitos varzeá","mammals",26,175,14.9,29
+"Iquitos varzeá","amphibians",13,175,7.4,29
+"Iquitos varzeá","birds",13,175,7.4,29
+"Iquitos varzeá","reptiles",11,175,6.3,29
+"Iquitos varzeá","insects",9,175,5.1,29
+"Iquitos varzeá","fungus",6,175,3.4,29
+"Iquitos varzeá","arthropods",5,175,2.9,29
+"Iquitos varzeá","fishes",4,175,2.3,29
+"Guianan piedmont and lowland moist forests","birds",76,162,46.9,30
+"Guianan piedmont and lowland moist forests","insects",28,162,17.3,30
+"Guianan piedmont and lowland moist forests","mammals",24,162,14.8,30
+"Guianan piedmont and lowland moist forests","plants",22,162,13.6,30
+"Guianan piedmont and lowland moist forests","fishes",12,162,7.4,30
+"Valdivian temperate forests","plants",67,148,45.3,31
+"Valdivian temperate forests","birds",25,148,16.9,31
+"Valdivian temperate forests","arthropods",20,148,13.5,31
+"Valdivian temperate forests","mammals",15,148,10.1,31
+"Valdivian temperate forests","fishes",10,148,6.8,31
+"Valdivian temperate forests","insects",6,148,4.1,31
+"Valdivian temperate forests","crustaceans",5,148,3.4,31
+"Solimões-Japurá moist forests","plants",97,144,67.4,32
+"Solimões-Japurá moist forests","fishes",27,144,18.8,32
+"Solimões-Japurá moist forests","reptiles",20,144,13.9,32
+"Mato Grosso seasonal forests","birds",63,124,50.8,33
+"Mato Grosso seasonal forests","plants",22,124,17.7,33
+"Mato Grosso seasonal forests","mammals",12,124,9.7,33
+"Mato Grosso seasonal forests","fungus",10,124,8.1,33
+"Mato Grosso seasonal forests","insects",10,124,8.1,33
+"Mato Grosso seasonal forests","amphibians",5,124,4,33
+"Mato Grosso seasonal forests","fishes",2,124,1.6,33
+"Bahamian pine mosaic","fishes",100,110,90.9,34
+"Bahamian pine mosaic","reptiles",10,110,9.1,34
+"Fernando de Noronha-Atol das Rocas moist forests","fishes",70,107,65.4,35
+"Fernando de Noronha-Atol das Rocas moist forests","reptiles",31,107,29,35
+"Fernando de Noronha-Atol das Rocas moist forests","birds",6,107,5.6,35
+"Central American montane forests","insects",24,104,23.1,36
+"Central American montane forests","mammals",24,104,23.1,36
+"Central American montane forests","amphibians",16,104,15.4,36
+"Central American montane forests","birds",16,104,15.4,36
+"Central American montane forests","reptiles",16,104,15.4,36
+"Central American montane forests","plants",8,104,7.7,36
+"Marajó varzeá","reptiles",33,103,32,37
+"Marajó varzeá","fishes",30,103,29.1,37
+"Marajó varzeá","birds",12,103,11.7,37
+"Marajó varzeá","mammals",12,103,11.7,37
+"Marajó varzeá","crustaceans",8,103,7.8,37
+"Marajó varzeá","plants",6,103,5.8,37
+"Marajó varzeá","insects",2,103,1.9,37
+"Napo moist forests","plants",82,100,82,38
+"Napo moist forests","amphibians",7,100,7,38
+"Napo moist forests","reptiles",7,100,7,38
+"Napo moist forests","arthropods",2,100,2,38
+"Napo moist forests","fungus",2,100,2,38
+"Eastern Cordillera real montane forests","plants",75,85,88.2,39
+"Eastern Cordillera real montane forests","fungus",10,85,11.8,39
+"Negro-Branco moist forests","plants",84,84,100,40
+"Campos Rupestres montane savanna","insects",60,81,74.1,41
+"Campos Rupestres montane savanna","macroinvertebrates",20,81,24.7,41
+"Campos Rupestres montane savanna","plants",1,81,1.2,41
+"Peruvian Yungas","plants",81,81,100,42
+"Pernambuco interior forests","birds",38,78,48.7,43
+"Pernambuco interior forests","reptiles",16,78,20.5,43
+"Pernambuco interior forests","mammals",14,78,17.9,43
+"Pernambuco interior forests","plants",8,78,10.3,43
+"Pernambuco interior forests","insects",2,78,2.6,43
+"Lesser Antillean dry forests","fishes",70,77,90.9,44
+"Lesser Antillean dry forests","reptiles",7,77,9.1,44
+"Guianan Highlands moist forests","birds",38,76,50,45
+"Guianan Highlands moist forests","plants",24,76,31.6,45
+"Guianan Highlands moist forests","mammals",12,76,15.8,45
+"Guianan Highlands moist forests","insects",2,76,2.6,45
+"Northwestern Andean montane forests","plants",49,69,71,46
+"Northwestern Andean montane forests","fungus",18,69,26.1,46
+"Northwestern Andean montane forests","arthropods",2,69,2.9,46
+"Leeward Islands moist forests","fishes",60,66,90.9,47
+"Leeward Islands moist forests","reptiles",6,66,9.1,47
+"Chilean matorral","plants",26,64,40.6,48
+"Chilean matorral","fishes",12,64,18.8,48
+"Chilean matorral","birds",10,64,15.6,48
+"Chilean matorral","arthropods",8,64,12.5,48
+"Chilean matorral","mammals",6,64,9.4,48
+"Chilean matorral","crustaceans",2,64,3.1,48
+"Pantepui","birds",38,60,63.3,49
+"Pantepui","mammals",12,60,20,49
+"Pantepui","plants",8,60,13.3,49
+"Pantepui","insects",2,60,3.3,49
+"Bahamian-Antillean mangroves","fishes",52,57,91.2,50
+"Bahamian-Antillean mangroves","reptiles",5,57,8.8,50
+"Panamanian dry forests","birds",24,56,42.9,51
+"Panamanian dry forests","mammals",16,56,28.6,51
+"Panamanian dry forests","amphibians",8,56,14.3,51
+"Panamanian dry forests","plants",8,56,14.3,51
+"Chocó-Darién moist forests","plants",29,55,52.7,52
+"Chocó-Darién moist forests","birds",9,55,16.4,52
+"Chocó-Darién moist forests","fishes",8,55,14.5,52
+"Chocó-Darién moist forests","mammals",6,55,10.9,52
+"Chocó-Darién moist forests","amphibians",3,55,5.5,52
+"Jamaican dry forests","fishes",50,55,90.9,53
+"Jamaican dry forests","reptiles",5,55,9.1,53
+"Galápagos Islands scrubland mosaic","fishes",52,52,100,54
+"Central American dry forests","fishes",44,50,88,55
+"Central American dry forests","plants",4,50,8,55
+"Central American dry forests","arthropods",2,50,4,55
+"Magellanic subpolar forests","plants",32,48,66.7,56
+"Magellanic subpolar forests","fishes",10,48,20.8,56
+"Magellanic subpolar forests","arthropods",3,48,6.2,56
+"Magellanic subpolar forests","birds",3,48,6.2,56
+"Cuban cactus scrub","fishes",40,44,90.9,57
+"Cuban cactus scrub","reptiles",4,44,9.1,57
+"Hispaniolan dry forests","fishes",40,44,90.9,58
+"Hispaniolan dry forests","reptiles",4,44,9.1,58
+"Mesoamerican Gulf-Caribbean mangroves","fishes",40,44,90.9,59
+"Mesoamerican Gulf-Caribbean mangroves","reptiles",4,44,9.1,59
+"Windward Islands moist forests","birds",10,40,25,60
+"Windward Islands moist forests","insects",10,40,25,60
+"Windward Islands moist forests","mammals",10,40,25,60
+"Windward Islands moist forests","plants",10,40,25,60
+"Caatinga","reptiles",28,36,77.8,61
+"Caatinga","birds",3,36,8.3,61
+"Caatinga","mammals",3,36,8.3,61
+"Caatinga","plants",2,36,5.6,61
+"Everglades","fishes",30,33,90.9,62
+"Everglades","reptiles",3,33,9.1,62
+"Trinidad and Tobago moist forests","fishes",30,33,90.9,63
+"Trinidad and Tobago moist forests","reptiles",3,33,9.1,63
+"Isthmian-Pacific moist forests","birds",12,32,37.5,64
+"Isthmian-Pacific moist forests","mammals",8,32,25,64
+"Isthmian-Pacific moist forests","amphibians",4,32,12.5,64
+"Isthmian-Pacific moist forests","fishes",4,32,12.5,64
+"Isthmian-Pacific moist forests","plants",4,32,12.5,64
+"Pernambuco coastal forests","plants",18,32,56.2,65
+"Pernambuco coastal forests","reptiles",8,32,25,65
+"Pernambuco coastal forests","crustaceans",6,32,18.8,65
+"Guajira-Barranquilla xeric scrub","plants",20,31,64.5,66
+"Guajira-Barranquilla xeric scrub","fishes",10,31,32.3,66
+"Guajira-Barranquilla xeric scrub","reptiles",1,31,3.2,66
+"Apure-Villavicencio dry forests","plants",30,30,100,67
+"Caqueta moist forests","plants",30,30,100,68
+"Magdalena Valley montane forests","plants",28,28,100,69
+"Puerto Rican moist forests","fishes",20,28,71.4,70
+"Puerto Rican moist forests","plants",4,28,14.3,70
+"Puerto Rican moist forests","arthropods",2,28,7.1,70
+"Puerto Rican moist forests","reptiles",2,28,7.1,70
+"Venezuelan Andes montane forests","plants",20,28,71.4,71
+"Venezuelan Andes montane forests","insects",8,28,28.6,71
+"Ucayali moist forests","plants",27,27,100,72
+"Atacama desert","plants",13,26,50,73
+"Atacama desert","birds",5,26,19.2,73
+"Atacama desert","arthropods",4,26,15.4,73
+"Atacama desert","mammals",3,26,11.5,73
+"Atacama desert","crustaceans",1,26,3.8,73
+"Cauca Valley montane forests","plants",24,24,100,74
+"Northern Andean páramo","plants",20,24,83.3,75
+"Northern Andean páramo","fungus",4,24,16.7,75
+"San Lucan xeric scrub","fishes",22,22,100,76
+"Monte Alegre varzeá","fishes",17,21,81,77
+"Monte Alegre varzeá","amphibians",2,21,9.5,77
+"Monte Alegre varzeá","insects",2,21,9.5,77
+"Cocos Island moist forests","fishes",20,20,100,78
+"Maranhão Babaçu forests","birds",14,19,73.7,79
+"Maranhão Babaçu forests","mammals",3,19,15.8,79
+"Maranhão Babaçu forests","plants",2,19,10.5,79
+"Costa Rican seasonal moist forests","fishes",18,18,100,80
+"Patagonian steppe","plants",12,18,66.7,81
+"Patagonian steppe","fishes",4,18,22.2,81
+"Patagonian steppe","arthropods",1,18,5.6,81
+"Patagonian steppe","birds",1,18,5.6,81
+"Chiquitano dry forests","mammals",10,14,71.4,82
+"Chiquitano dry forests","plants",4,14,28.6,82
+"Cordillera Oriental montane forests","plants",14,14,100,83
+"Western Ecuador moist forests","plants",8,12,66.7,84
+"Western Ecuador moist forests","fungus",2,12,16.7,84
+"Western Ecuador moist forests","mammals",2,12,16.7,84
+"Cayos Miskitos-San Andrés and Providencia moist forests","fishes",10,11,90.9,85
+"Cayos Miskitos-San Andrés and Providencia moist forests","reptiles",1,11,9.1,85
+"Cuban dry forests","fishes",10,11,90.9,86
+"Cuban dry forests","reptiles",1,11,9.1,86
+"Jamaican moist forests","fishes",10,11,90.9,87
+"Jamaican moist forests","reptiles",1,11,9.1,87
+"Cordillera de Merida páramo","insects",6,10,60,88
+"Cordillera de Merida páramo","plants",4,10,40,88
+"Central Andean wet puna","plants",9,9,100,89
+"Gulf of California xeric scrub","fishes",8,8,100,90
+"La Costa xeric shrublands","plants",6,8,75,91
+"La Costa xeric shrublands","insects",2,8,25,91
+"Llanos","plants",8,8,100,92
+"Magdalena Valley dry forests","plants",8,8,100,93
+"Rapa Nui subtropical broadleaf forests","fishes",8,8,100,94
+"Eastern Panamanian montane forests","birds",3,7,42.9,95
+"Eastern Panamanian montane forests","mammals",2,7,28.6,95
+"Eastern Panamanian montane forests","amphibians",1,7,14.3,95
+"Eastern Panamanian montane forests","plants",1,7,14.3,95
+"Southern Mesoamerican Pacific mangroves","birds",3,7,42.9,96
+"Southern Mesoamerican Pacific mangroves","mammals",2,7,28.6,96
+"Southern Mesoamerican Pacific mangroves","amphibians",1,7,14.3,96
+"Southern Mesoamerican Pacific mangroves","plants",1,7,14.3,96
+"Talamancan montane forests","birds",3,7,42.9,97
+"Talamancan montane forests","mammals",2,7,28.6,97
+"Talamancan montane forests","amphibians",1,7,14.3,97
+"Talamancan montane forests","plants",1,7,14.3,97
+"Balsas dry forests","plants",6,6,100,98
+"Catatumbo moist forests","plants",6,6,100,99
+"Magdalena-Urabá moist forests","plants",4,4,100,100
+"Marañón dry forests","plants",3,3,100,101
+"Trans-Mexican Volcanic Belt pine-oak forests","plants",3,3,100,102
+"Cauca Valley dry forests","plants",2,2,100,103
+"Central Andean dry puna","plants",2,2,100,104
+"Cordillera Central páramo","plants",2,2,100,105
+"Ecuadorian dry forests","fishes",2,2,100,106
+"High Monte","plants",2,2,100,107
+"Pantanal","fishes",2,2,100,108
+"South American Pacific mangroves","fishes",2,2,100,109
+"Southern Andean steppe","plants",2,2,100,110
+"Southern Andean Yungas","plants",2,2,100,111
