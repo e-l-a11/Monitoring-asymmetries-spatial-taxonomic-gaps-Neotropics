@@ -1,12 +1,11 @@
 # 05b. sampbias model (one chain). Run from the repository root via scripts/05_sampbias/run_all.sh (16 chains; ~25 min on 8 cores)
-# sampbias v6 (= v5 com o site.data v4 corrigido, 2026-10-05):
-#   - usa a coluna linha_planilha do site_data_v4 para casar com classificacao_3classes.csv (Príncipe foi removido)
-#   - filtro de longitude -30 -> -28 (Trindade/Martim Vaz ficavam de fora)
-#   - universo: acrescenta as ilhas oceanicas do Natural Earth 1:10m que nao existem no 1:50m (data/oceanic_islands_ne10m.rds)
-# sampbias v5: modelos SEPARADOS para sites terrestres e marinhos, agora com instituicoes de pesquisa
-# instituicoes = universidades + institutos/centros de pesquisa + orgaos governamentais ambientais/cientificos
-#                (ROR, filtrado por palavra-chave de dominio ambiental/biologico; ver ror_instituicoes_lac_filtrado.csv)
-# uso: Rscript sampbias_analise_v5_com_instituicoes.R <site.data.csv> <classificacao.csv> <instituicoes.csv> <terra|mar> <A|B> <res_graus> <iteracoes> <seed> [rotulo]
+# Separate models for terrestrial and marine sites (data/site_habitat_class.csv; freshwater sites are not modelled).
+# Bias factors: land = roads, cities, water bodies, airports, research institutions (1° grid);
+#               sea = coast, ports, cities, airports, research institutions (0.5° grid, 370 km coastal belt incl. oceanic islands).
+# Research institutions: universities, research institutes and governmental environmental agencies from ROR
+#               (data/research_institutions_ror_lac.csv).
+# Usage: Rscript scripts/05_sampbias/02_sampbias_model.R <site_data.csv> <site_habitat_class.csv> <institutions.csv>
+#        <terra|mar> <A|B> <grid_deg> <iterations> <seed> [label]   (A = all records, B = one record per project per cell)
 suppressMessages({library(sampbias); library(dplyr); library(terra); library(sf); library(rnaturalearth)})
 sf_use_s2(FALSE)
 

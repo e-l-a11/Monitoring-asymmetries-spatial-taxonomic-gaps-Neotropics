@@ -1,5 +1,5 @@
 # 06. Figure 2: taxa de amostragem relativa x distancia (sampbias), (A) terra, (B) mar
-# Roda local, so le sampbias_v6_resultados.csv (analise principal = variante A).
+# Reads results/sampbias_results.csv (main analysis = variant A, all records).
 # Curva de cada fator: taxa = exp(-w * d), com w = log(2) / meia-distancia.
 # Como cada fator tem um so parametro, a faixa do IC 95% sai direto de half_lo e half_hi.
 suppressMessages({library(ggplot2); library(dplyr)})

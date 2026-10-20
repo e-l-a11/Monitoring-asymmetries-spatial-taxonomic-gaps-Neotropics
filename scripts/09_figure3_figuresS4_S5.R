@@ -1,9 +1,6 @@
-# 09. Figure 3 (maps + donuts) and Figures S3-S4. Requires the ecoregion shapefiles in data/shapefiles/ (see README).
-# Figura 4: mesmo layout da Figura4 anterior (montagem das Figs. 5 e 6 originais), com os dados das planilhas finais.
-# Diferenças em relação ao rascunho v4: fundo só com as Américas; % só nas 2 maiores fatias (empates incluídos), como na original.
-# Figura 3 (A terrestre, B marinho) + Figs. S3 e S4 (top 20 ecorregiões em donuts), com o site.data v4
-# Composição: ecorregioes_v4.R (rodar antes). Mesmo layout da Figura 4 anterior: ecorregiões coloridas
-# pelo grupo dominante, top 20 numeradas, 5 donuts de destaque por painel (as mesmas ecorregiões de antes).
+# 09. Figure 3 (maps + donuts; A terrestrial, B marine) and Figures S4 (marine) and S5 (terrestrial): top 20 ecoregions as donuts.
+# Requires the ecoregion shapefiles in data/shapefiles/ (see README) and the composition tables from script 03.
+# Ecoregions coloured by the dominant taxonomic group, top 20 numbered, 5 highlighted donuts per panel.
 source("scripts/00_theme.R")
 suppressMessages({library(sf); library(rnaturalearth)}); sf_use_s2(FALSE)
 terr <- read.csv("results/terrestrial_ecoregions_composition.csv")
@@ -67,8 +64,7 @@ painel <- function(comp, shp, col, destaques, terra_por_cima = FALSE) {
                      legend.title = element_text(size = 16))
 }
 
-# posições dos donuts (centro, em graus) — as mesmas da Figura 4 anterior; 19/10: Caribbean shrublands e Guianan (marinho)
-# saíram do top 20 com a correção terra/mar e foram trocadas por Guianan moist forests (mamíferos) e Amazonia (plantas/mangue)
+# donut positions (centre, in degrees)
 dT <- data.frame(eco = c("Guianan moist forests", "Tocantins/Pindare moist forests", "Purus varzeá", "Bahia interior forests", "Araucaria moist forests"),
                  x = c(-60, -36, -99, -17, -30), y = c(27.5, 4, -11, -22, -49))
 dM <- data.frame(eco = c("Eastern Caribbean", "Nicoya", "Amazonia", "Rio Grande", "Araucanian"),
@@ -80,7 +76,7 @@ pB <- painel(mar, sh$meow, "ECOREGION", dM, terra_por_cima = TRUE)
 salvar((pA / (pB + theme(legend.position = "none"))) + plot_layout(guides = "collect") + tags, "Figure3", 15, 19.3)
 
 
-# S4 (marinho) / S5 (terrestre): top 20 em donuts
+# S4 (marine) / S5 (terrestrial): top 20 as donuts
 grade <- function(comp, nome) {
   x <- comp %>% filter(rank <= 20) %>% mutate(tit = factor(paste0(rank, ".\n", quebra(eco, 24)))) %>%
     mutate(tit = reorder(tit, rank), grupo = factor(grupo, levels = grupos)) %>% group_by(tit) %>% arrange(grupo, .by_group = TRUE) %>%
@@ -95,5 +91,5 @@ grade <- function(comp, nome) {
           legend.title = element_text(size = 12), legend.text = element_text(size = 11))
   salvar(p, nome, 11, 9.5)
 }
-grade(terr, "FigureS5"); grade(mar, "FigureS4")   # S4 marinho e S5 terrestre: ordem de citação no texto
+grade(terr, "FigureS5"); grade(mar, "FigureS4")   # S4 marine, S5 terrestrial (order of citation in the text)
 cat("ok\n")

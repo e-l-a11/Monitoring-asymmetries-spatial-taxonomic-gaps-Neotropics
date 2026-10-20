@@ -6,7 +6,7 @@ suppressMessages({library(sf); library(rnaturalearth); library(ggspatial)}); sf_
 s <- read.csv("data/site_data.csv", check.names = FALSE); s <- s[!is.na(s$Site.Latitude) & !is.na(s$Site.Longitude), ]
 s$lon <- as.numeric(s$Site.Longitude); s$lat <- as.numeric(s$Site.Latitude)
 
-# ---- densidade por país (recalculada com o site.data v4)
+# ---- land-based site density per country
 d0 <- read.csv("data/country_land_area_gdp.csv")
 w50 <- ne_countries(scale = 50, returnclass = "sf")
 w50$iso <- ifelse(w50$adm0_a3 %in% d0$iso3, w50$adm0_a3, w50$iso_a3_eh)
@@ -25,8 +25,7 @@ cat(sprintf("terra: %d sites | Brasil %d (%.1f%%) | pares projeto-país %d, Bras
     sum(d$sites_on_land), br$sites_on_land, 100 * br$sites_on_land / sum(d$sites_on_land), sum(d$projects), br$projects,
     100 * br$projects / sum(d$projects), br$sites_per_100k_km2, med, rank(-x$sites_per_100k_km2)[x$iso3 == "BRA"], nrow(x)))
 
-# ---- (A) mapa: densidade de sítios em hexágonos de 1° (v5, pedido da Mari 19/10), terra e mar em paletas separadas
-# água doce junto com terra, como no texto; v4 (pontos) guardada em figures/drafts/
+# ---- (A) map: site density in 1° hexagons, land (including freshwater) and marine sites in separate colour scales
 cl <- read.csv("data/site_habitat_class.csv")
 s$marinho <- cl$classe[match(s$linha_planilha, cl$linha_planilha)] == "marine"
 mundo <- ne_countries(scale = 50, returnclass = "sf")

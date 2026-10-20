@@ -1,7 +1,6 @@
 # 05c. Consolidate the 16 chains -> results/sampbias_results.csv (R-hat, ESS, half-distances)
-# Consolida as cadeias do sampbias: R-hat (cadeias divididas), ESS total, meia-distancia agrupada e IC 95%
-# v6 = v5 com o site.data v4. v5 (com instituicoes): nao reabre o raster salvo no .rds (terra nao sobrevive a saveRDS/readRDS entre sessoes sem wrap());
-#     registros/celulas vem do CSV que cada cadeia ja salvou na hora em que rodou.
+# Split-chain R-hat, total ESS, pooled half-distance and 95% interval for each factor; records/cells come from the CSV
+# saved by each chain (the terra raster does not survive saveRDS/readRDS between sessions).
 O <- "results/sampbias_runs/"
 files <- list.files(O, pattern = "^sampbias_v6_.*_final\\.rds$")
 pat <- "^sampbias_v6_([a-z]+)_([AB])_([0-9.]+)deg_it([0-9.e+]+)_seed([0-9]+)_final\\.rds$"

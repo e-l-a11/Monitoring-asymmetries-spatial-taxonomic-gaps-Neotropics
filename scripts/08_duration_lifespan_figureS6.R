@@ -1,10 +1,8 @@
-# 08. Figure S5 + números do texto: duração do projeto x longevidade das espécies (nível de projeto)
-# Método (Métodos do texto): para cada projeto com longevidade de pelo menos uma espécie,
-# log10(mediana da duração) ~ log10(mediana da longevidade máxima das espécies), OLS.
-# Robustez: bootstrap de projetos (5.000), Spearman, sem o projeto com mais espécies (ATDN).
-# Mesmo método do script original: só Plantae e Animalia,
-# bootstrap de 5.000 réplicas (seed 42), robustez sem o projeto com mais espécies (ATDN). Com a groups_time antiga reproduz
-# exatamente o texto anterior (slope 0.075, n = 59).
+# 08. Figure S6 and text numbers: project duration vs species lifespan (project level)
+# For each project with lifespan data for at least one plant or animal species:
+# log10(median duration) ~ log10(median maximum lifespan of its species), OLS.
+# Robustness: bootstrap of projects (5,000 replicates, seed 42), Spearman correlation, and refit without the project
+# with the most species (ATDN).
 source("scripts/00_theme.R")
 g <- read.csv("data/groups_time.csv", check.names = FALSE)
 g$dur <- suppressWarnings(as.numeric(g$`monitoring time (years)`)); g$ls <- suppressWarnings(as.numeric(g$lifespan.max))

@@ -1,7 +1,6 @@
-# 07. Figure S2 (variable types per taxonomic group, heat map; A terrestrial + freshwater, B marine) and Figure S3 (abiotic variables)
-# v7 (19/10, pedido da Mari): o mapa de calor substitui as barras da antiga Fig. S1 e continua como Fig. S1 (suplementar), decisão da Elisa 19/10.
-# Fonte: variable_data; variáveis bióticas com tipo definido (métrica "na" fica de fora); cada variável de cada projeto conta 1.
-# Cor = % das variáveis do grupo em cada tipo; terra em laranja e mar em azul-marinho (cores da Fig. 1); grupos com < 3 variáveis não aparecem.
+# 07. Figure S2 (heat map of variable types per taxonomic group; A terrestrial + freshwater, B marine) and Figure S3 (abiotic variables)
+# Source: variable_data; biotic variables with a defined type (metric "na" excluded); each variable of each project counts once.
+# Colour = % of the group's variables in each type (land orange, sea navy, as in Fig. 1); groups with < 3 variables are not shown.
 source("scripts/00_theme.R")
 v <- read.csv("data/variable_data.csv")
 b <- v %>% filter(tolower(Variable.Type) == "biotic", Metrics != "na") %>%
@@ -47,7 +46,7 @@ for (r in c("marine", "terrestrial")) { x0 <- v0[tolower(v0$Region) == r, ]
       max(tapply(x0$Metrics, x0$`Groups-variables`, function(z) length(unique(z)))), "\n") }
 for (m in c("dna analysis", "phenology", "productivity")) cat("07 | projetos que medem", m, ":", length(unique(v0$Network.ID[tolower(trimws(v0$Metrics)) == m])), "\n")
 
-# Figura S2 (era S1): número de projetos que medem cada tipo de variável abiótica (terrestre e marinho juntos)
+# Figure S3: number of projects measuring each type of abiotic variable (terrestrial and marine projects combined)
 v <- read.csv("data/variable_data.csv", check.names = FALSE, strip.white = TRUE)
 names(v) <- trimws(names(v)); v <- v[, names(v) != ""]
 x <- v %>% filter(tolower(Variable.Type) == "abiotic", !Metrics %in% c("na", "")) %>%

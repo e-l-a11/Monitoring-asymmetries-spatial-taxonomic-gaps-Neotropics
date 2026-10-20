@@ -28,7 +28,7 @@ R packages: dplyr, ggplot2, patchwork, sf, rnaturalearth (+ rnaturalearthdata, r
 |---|---|---|
 | `01_fix_site_coordinates.R` | Corrects site coordinates (see below) | `data/intermediate/`, `logs/LOG_coordinates_site_data.csv` |
 | `02_clean_spreadsheets.R` | Harmonizes project IDs across tables, fixes shifted cells, removes duplicated rows, fills missing taxonomy | `data/*.csv`, `logs/LOG_cleaning_spreadsheets.csv` |
-| `03_ecoregions.R` | Assigns each site to a terrestrial and a marine ecoregion; taxonomic composition per ecoregion | `data/site_ecoregions.csv`, `results/*_ecoregions_composition.csv` |
+| `03_ecoregions.R` | Assigns each site to a terrestrial and a marine ecoregion; taxonomic composition per ecoregion (each site counted only in ecoregions of its own realm) | `data/site_ecoregions.csv`, `results/*_ecoregions_composition.csv` |
 | `04_density_figure1.R` | Land-based site density per country; partial correlation with GDP per capita (and total GDP); Figure 1 (A: site density in 1° hexagons, land and marine sites in separate colour scales; B: density per country) | `results/land_site_density_by_country.csv`, `figures/Figure1` |
 | `05_sampbias/` | Spatial sampling-bias models (sampbias), land and sea, 4 chains × 10⁶ iterations, with and without one record per project per cell | `results/sampbias_results.csv` |
 | `06_figure2_sampbias.R` | Figure 2 | `figures/Figure2` |

@@ -1,11 +1,10 @@
-# 03. Ecoregion of each site and taxonomic composition of the ecoregions (Fig. 3, Figs. S3-S4, Table S4)
-# Ecorregiões com o site.data v4 (coordenadas corrigidas)
-# 1) site_eco_v5.csv: cada site -> ecorregião terrestre (WWF TEOW, ECO_NAME) e marinha (MEOW, ECOREGION)
-#    Mesmo método do site_eco antigo (todos os sites cruzados com os dois mapas). Validação: o mesmo join
-#    com as coordenadas ANTIGAS reproduz o site_eco antigo (TEOW 0 diferenças; MEOW 2 sites de fronteira).
-# 2) composição por ecorregião = Data analysis.R, seções 5 e 6:
-#    variable.data (bióticas) x site_eco por Network.ID (muitos-para-muitos), contagem por ecorregião x grupo.
-#    Terrestre: sem corals, plankton, seagrass, benthos, zooplaktons. Marinho: todos os grupos.
+# 03. Ecoregion of each site and taxonomic composition of the ecoregions (Fig. 3, Figs. S4-S5, Table S4)
+# 1) Each site with coordinates is joined to the WWF terrestrial ecoregions (ECO_NAME) and to the Marine Ecoregions of the World
+#    (ECOREGION) -> data/site_ecoregions.csv (recomputed only if the shapefiles are in data/shapefiles/).
+# 2) Composition: biotic variables (variable_data) x sites of each project, counted per ecoregion and taxonomic group
+#    (biotic variable-by-site records). Each site counts only in ecoregions of its own realm: terrestrial and freshwater
+#    sites in terrestrial ecoregions, marine sites in marine ecoregions (data/site_habitat_class.csv).
+#    Terrestrial: without corals, plankton, seagrass, benthos, zooplankton. Marine: all groups.
 #    (o filtro str_detect(REALM, "mar") do script original não pegava nenhuma linha; aqui o marinho é a coluna ECOREGION)
 suppressMessages({library(sf); library(dplyr)}); sf_use_s2(FALSE)
 s <- read.csv("data/site_data.csv", check.names = FALSE)

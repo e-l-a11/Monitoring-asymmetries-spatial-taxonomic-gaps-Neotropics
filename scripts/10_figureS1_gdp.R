@@ -19,7 +19,8 @@ fig <- ggplot(g, aes(r_gdp, r_dens)) +
   geom_smooth(method = "lm", formula = y ~ x, colour = "grey45", fill = "grey85", linewidth = 0.6, linetype = "dashed") +
   geom_point(aes(colour = br, shape = sites_on_land == 0), size = 2.6) +
   geom_text_repel(aes(label = country, colour = br), size = 3, family = FONTE, seed = 1,
-                  min.segment.length = 0.3, segment.colour = "grey70", max.overlaps = Inf) +
+                  min.segment.length = 0.3, segment.colour = "grey70", max.overlaps = Inf,
+                  max.time = 60, max.iter = 20000) +   # layout fixed by iterations, not by time
   scale_colour_manual(values = c(`FALSE` = "grey40", `TRUE` = "#C0603F"), guide = "none") +
   scale_shape_manual(values = c(`FALSE` = 16, `TRUE` = 1), labels = c("≥ 1 site on land", "no site on land"), name = NULL) +
   annotate("text", x = -Inf, y = Inf, hjust = -0.05, vjust = 1.3, family = FONTE, size = 3.6, colour = "grey25",
