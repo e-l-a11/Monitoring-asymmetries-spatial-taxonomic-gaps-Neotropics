@@ -25,6 +25,14 @@ cat(sprintf("04 | land: %d sites | Brazil %d (%.1f%%) | project-country pairs %d
     sum(d$sites_on_land), br$sites_on_land, 100 * br$sites_on_land / sum(d$sites_on_land), sum(d$projects), br$projects,
     100 * br$projects / sum(d$projects), br$sites_per_100k_km2, med, rank(-x$sites_per_100k_km2)[x$iso3 == "BRA"], nrow(x)))
 
+# ---- number of countries and territories (Natural Earth admin-0 units, assigned from the coordinates; sites at sea
+#      are assigned to the nearest land unit)
+w10 <- ne_countries(scale = 10, returnclass = "sf")[, "admin"]
+pt <- st_as_sf(s, coords = c("lon", "lat"), crs = 4326)
+adm <- suppressMessages(st_join(pt, w10))$admin
+sea <- is.na(adm); adm[sea] <- w10$admin[suppressMessages(st_nearest_feature(pt[sea, ], w10))]
+cat(sprintf("04 | countries and territories (from coordinates): %d | sites with coordinates: %d\n", length(unique(adm)), length(adm)))
+
 # ---- (A) map: site density in 1° hexagons, land (including freshwater) and marine sites in separate colour scales
 cl <- read.csv("data/site_habitat_class.csv")
 s$marinho <- cl$classe[match(s$linha_planilha, cl$linha_planilha)] == "marine"
