@@ -1,0 +1,253 @@
+species_original,species_corrected,kingdom,phylum,class,order,family,lifespan_max,reason,source
+Cryptotermes verrucosus,Cryptotermes verruculosus,,,,,,,spelling or name error,
+Triangularitermes trianguliceps,Triangularitermes triangulariceps,,,,,,,spelling or name error,
+Cefhalotrigona capitata,Cephalotrigona capitata,,,,,,,spelling or name error,
+Plebeia witimanni,Plebeia wittmanni,,,,,,,spelling or name error,
+Praepedalioides phanias,Praepedaliodes phanias,,,,,,,spelling or name error,
+Pteronymia silva,Pteronymia sylvo,,,,,,,spelling or name error,
+Sterna paradisea,Sterna paradisaea,,,,,,,spelling or name error,
+Penelope purpuracens,Penelope purpurascens,,,,,,,spelling or name error,
+Momota lessonii,Momotus lessonii,Animalia,Chordata,Aves,Coraciiformes,Momotidae,,spelling or name error,
+Cichla ocellata,Cichla ocellaris,,,,,,,spelling or name error,
+Proloricaria prolix,Proloricaria prolixa,,,,,,,spelling or name error,
+Mussismilia brasiliensis,Mussismilia braziliensis,,,,,,,spelling or name error,
+Syagrus pleiocada,Syagrus pleioclada,,,,,,,spelling or name error,
+Calyptranthes poeppgiana,Calyptranthes poeppigiana,Plantae,Tracheophyta,Magnoliopsida,Myrtales,Myrtaceae,,spelling or name error,
+Brachiaria plantagina,Brachiaria plantaginea,,,,,,,spelling or name error,
+Renealmia alpina,Renealmia alpinia,,,,,,,spelling or name error,
+Ilex breviscuspis,Ilex brevicuspis,,,,,,,spelling or name error,
+Piptocarpha axilares,Piptocarpha axillaris,,,,,,,spelling or name error,
+Brayopsis monimocalix,Brayopsis monimocalyx,,,,,,,spelling or name error,
+Copaifera langdsdorffii,Copaifera langsdorffii,,,,,,,spelling or name error,
+Stylosanthus guianensis,Stylosanthes guianensis,,,,,,,spelling or name error,
+Ouratea semisserrata,Ouratea semiserrata,,,,,,,spelling or name error,
+Passiflora antioquensis,Passiflora antioquiensis,,,,,,,spelling or name error,
+Hyeronima antioquensis,Hieronyma antioquensis,,,,,,,spelling or name error,
+Hyeronyma alchorneoides,Hieronyma alchorneoides,,,,,,,spelling or name error,
+Pseudobombax grandiflorus,Pseudobombax grandiflorum,,,,,,,spelling or name error,
+Scleronema micrant,Scleronema micranthum,,,,,,,spelling or name error,
+Miconia coralina,Miconia corallina,,,,,,,spelling or name error,
+Eugenia hyemalis,Eugenia hiemalis,,,,,,,spelling or name error,
+Myrcia guaiensis,Myrcia guianensis,,,,,,,spelling or name error,
+Psidium cattleyanum,Psidium cattleianum,,,,,,,spelling or name error,
+Syzygium syzgioides,Syzygium syzygioides,,,,,,,spelling or name error,
+Piper glandulosis,Piper glandulosum,,,,,,,spelling or name error,
+Piper playablancanum,Piper playa-blancanum,,,,,,,spelling or name error,
+Ficus clusiaefolia,Ficus clusiifolia,,,,,,,spelling or name error,
+Phyllostilbon rhamnoides,Phyllostylon rhamnoides,,,,,,,spelling or name error,
+Allophyllus edulis,Allophylus edulis,,,,,,,spelling or name error,
+Solanum aculeatissimun,Solanum aculeatissimum,,,,,,,spelling or name error,
+Solanum sanctaecatharinae,Solanum sanctae-catharinae,,,,,,,spelling or name error,
+Prumnopitis taxifolia,Prumnopitys taxifolia,Plantae,Tracheophyta,Pinopsida,Pinales,Podocarpaceae,,spelling or name error,
+Ateleia glazioviana,Ateleia glazioveana,,,,,,,spelling or name error,
+Annona neoserícia,Annona neosericea,,,,,,,spelling or name error,
+Aspiroderma cylindrocarpon,Aspidosperma cylindrocarpon,,,,,,,spelling or name error,
+Erythrina crista,Erythrina crista-galli,Plantae,Tracheophyta,Magnoliopsida,Fabales,Fabaceae,,spelling or name error,
+Opuntia ficus,Opuntia ficus-indica,,,,,,,spelling or name error,
+Passiflora lingularis,Passiflora ligularis,,,,,,,spelling or name error,
+Myrrhinium artropurpureum,Myrrhinium atropurpureum,,,,,,,spelling or name error,
+Isidrogalvia sessili,Isidrogalvia sessiliflora,,,,,,,spelling or name error,
+Eurysternus haematicollis,Eurysternus hamaticollis,,,,,,,spelling or name error,
+Amitermes exellens,Amitermes excellens,,,,,,,spelling or name error,
+Mandaçaia quadrifasciata,Melipona quadrifasciata,Animalia,Arthropoda,Insecta,Hymenoptera,Apidae,,spelling or name error,
+Quararibea purpurata,Querula purpurata,Animalia,Chordata,Aves,Passeriformes,Cotingidae,,spelling or name error,
+Miconia theaezans,Miconia theizans,,,,,,,spelling or name error,
+Mosannona garwoodii,Mosannona garwoodiae,,,,,,,spelling or name error,
+Rubus rosaefolius,Rubus rosifolius,,,,,,,spelling or name error,
+Automulus parisiensis,Automolus paraensis,,,,,,,name not found in GBIF/COL; most likely intended name,GBIF; Catalogue of Life
+Eugenia schleuchriana,Eugenia schuechiana,,,,,,,name not found in GBIF/COL; most likely intended name,GBIF; Catalogue of Life
+Crypturellus guttatus,Tinamus guttatus,,,,,,,name not found in GBIF/COL; most likely intended name,GBIF; Catalogue of Life
+Abarema macradenia,Jupunba macradenia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Aburria cujubi,Pipile cujubi,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Acacia melanoceras,Vachellia melanoceras,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Aciotis aequatorialis,Aciotis acuminifolia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Acosmium dasycarpum,Leptolobium dasycarpum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Actinocephalus polyanthus,Paepalanthus polyanthus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Aeschynomene paniculata,Ctenodon paniculatus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ananas ananassoides,Ananas comosus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Aspidosperma vargasii,Aspidosperma parvifolium,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Baccharis elaeagnoides,Baccharis montana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Byrsonima coriacea,Byrsonima crassifolia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Caesalpinia ebano,Libidibia punctata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calathea altissima,Goeppertia altissima,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calathea cannoides,Goeppertia cannoides,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calathea micans,Goeppertia micans,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calathea neblinensis,Goeppertia neblinensis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Callicebus moloch,Plecturocebus moloch,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Callicebus vieirai,Plecturocebus vieirai,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calyptranthes lucida,Myrcia neolucida,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calyptranthes pileata,Myrcia pileata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calyptranthes strigipes,Myrcia strigosa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Calyptranthes tricona,Myrcia tricona,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Casearia commersoniana,Piparea dentata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Casearia javitensis,Piparea multiflora,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Catharacta chilensis,Stercorarius chilensis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Chloreuptychia agatha,Chloreuptychia chloris,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Chlorospingus ophthalmicus,Chlorospingus flavopectus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Cinnamomum glaziovii,Aiouea glaziovii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Cinnamomum triplinerve,Aiouea montana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Cithaerias andromeda,Cithaerias pireta,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Clidemia dentata,Miconia dentata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Clidemia hirta,Miconia crenata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Clidemia sericea,Miconia sericea,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Clidemia urceolata,Miconia neourceolata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Colostethus flotator,Silverstoneia flotator,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Commiphora leptophloeos,Bursera leptophloeos,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Conostegia bracteata,Miconia conobracteata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Conostegia cinnamomea,Miconia cinnamomea,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Copella callolepis,Copella nattereri,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Cyanophaia bicolor,Riccordia bicolor,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Dioclea bicolor,Macropsychanthus bicolor,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Gochnatia polymorpha,Moquiniastrum polymorphum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Gomesa spiloptera,Gomesa maculosa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Guarea bullata,Guarea glabra,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Guarea trichilioides,Guarea guidonia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Hallea stipulosa,Mitragyna stipulosa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Heliconia tarumaensis,Heliconia acuminata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Heliocarpus popayanensis,Heliocarpus americanus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ilex caliana,Ilex laurina,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Inga archeri,Inga lallensis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Laetia procera,Casearia bicolor,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Laetiporus squalidus,Atlantiporus squalidus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Laplacea acutifolia,Gordonia acutifolia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Lavoisiera macrocarpa,Microlicia macrocarpa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Lavoisiera subulata,Microlicia subulata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Leandra dasytricha,Miconia dasytricha,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Leandra dichotoma,Miconia sulcicaulis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Licania cabrerae,Moquilea cabrerae,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Licania rigida,Microdesmia rigida,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Licania tomentosa,Moquilea tomentosa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Lonchocarpus campestris,Muellera campestris,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Luxemburgia villosa,Luxemburgia glazioviana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Lycopodium jussiaei,Diphasium jussiaei,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Lycopodium thyoides,Diphasiastrum thyoides,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Lytocaryum weddellianum,Syagrus weddelliana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Machaerium paraguariense,Machaerium oblongifolium,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Marlierea reitzii,Myrcia reitzii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Marlierea sucrei,Myrcia sucrei,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Marlierea verticillaris,Myrcia neoverticillaris,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Miconia septuplinervia,Miconia trichocalyx,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Mikania jamesonii,Mikania granulata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Millettia vasta,Adinobotrys vastus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Mollinedia schottiana,Mollinedia umbellata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Montastraea annularis,Orbicella annularis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Myrceugenia acutata,Myrceugenia ovata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Myrcia fallax,Myrcia splendens,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Myrcia guajavifolia,Myrcia splendens,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ocotea cernua,Ocotea leptobotra,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ocotea indecora,Mespilodaphne indecora,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ocotea pulchella,Mespilodaphne pulchella,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ossaea amygdaloides,Miconia amygdaloides,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ossaea congestiflora,Miconia leacongestiflora,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Patagonula americana,Cordia americana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pausinystalia macroceras,Corynanthe macroceras,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pennisetum clandestinum,Cenchrus clandestinus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Phyciodes liriope,Ortilia liriope,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Physalaemus pustulosus,Engystomops pustulosus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pierella hyalinus,Pierella dracontis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pierella lamia,Pierella rhea,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pionus reichenowi,Pionus menstruus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Piper cabellense,Piper cernuum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Piper cordulatum,Piper trinervium,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Piper nudibracteatum,Piper obliquum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pisum sativum,Lathyrus oleraceus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pithecellobium macradenium,Jupunba macradenia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pleurostachys sparsiflora,Rhynchospora sparsiflora,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Polyandrococos caudescens,Allagoptera caudescens,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Polypodium levigatum,Serpocaulon levigatum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Potentilla vesca,Fragaria vesca,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Potentilla virginiana,Fragaria virginiana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Protium stevensonii,Tetragastris panamensis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Psidium pohlianum,Psidium salutare,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Psychotria graciliflora,Psychotria biaristata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Psychotria hoffmannseggiana,Palicourea hoffmannseggiana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Psychotria poeppigiana,Palicourea tomentosa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pterocarpus hayesii,Pterocarpus rohrii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Pyrenaria shinkoensis,Pyrenaria microcarpa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Qualea dichotoma,Qualea cordata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Rhamnus sphaerosperma,Frangula sphaerosperma,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Rhus succedanea,Toxicodendron succedaneum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Rivulus punctatus,Melanorivulus punctatus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Rollinia dolabripetala,Annona dolabripetala,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Rosmarinus officinalis,Salvia rosmarinus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Roupala brasiliensis,Roupala montana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Saccopetalum lineatum,Miliusa horsfieldii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Sansevieria trifasciata,Dracaena trifasciata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Sarcocephalus pobeguinii,Nauclea pobeguinii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Schefflera ferruginea,Sciodaphyllum ferrugineum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Schefflera macrocarpa,Didymopanax macrocarpus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Schefflera morototoni,Didymopanax morototoni,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Schefflera octophylla,Heptapleurum heptaphyllum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Schizolobium amazonicum,Schizolobium parahyba,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Sebastiania commersoniana,Sebastiania klotzschiana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Solanum johannae,Solanum cylindricum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Sphaeroides testudineus,Sphoeroides testudineus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Staphylea occidentalis,Turpinia occidentalis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Stemmadenia grandiflora,Tabernaemontana grandiflora,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tachigali vasquezii,Tachigali setifera,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tangara cayana,Stilpnia cayana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tangara palmarum,Thraupis palmarum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tangara sayaca,Thraupis sayaca,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tapirus bairdii,Tapirella bairdii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tayassu tajacu,Pecari tajacu,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Taygetis cleopatra,Taygetis andromeda,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Taygetis laches,Taygetis thamyra,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Taygetis sosis,Taygetis xenana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tecoma capensis,Tecomaria capensis,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Terpsichore taxifolia,Mycopteris taxifolia,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tetraplandra leandrii,Algernonia leandrii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Thelypteris deflexa,Amauropelta deflexa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Thelypteris hispidula,Christella hispidula,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tiaris bicolor,Melanospiza bicolor,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tibouchina lepidota,Andesanthus lepidotus,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tibouchina sellowiana,Pleroma sellowianum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tibouchina urvilleana,Pleroma urvilleanum,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tilapia rendalli,Coptodon rendalli,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Tococa bullifera,Miconia bullifera,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Torresea acreana,Amburana acreana,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Trametopsis luteocontexta,Aegis luteocontexta,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Trembleya laniflora,Microlicia laniflora,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Trophis caucana,Olmedia aspera,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Uncinia subsacculata,Carex subsacculata,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Verbenoxylum reitzii,Recordia reitzii,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Weinmannia racemosa,Pterophylla racemosa,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Ziziphus joazeiro,Sarcomphalus joazeiro,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Zuelania guidonia,Casearia icosandra,,,,,,,synonym; accepted name in both GBIF and Catalogue of Life,GBIF backbone; Catalogue of Life (2026)
+Zentrygon albifacies,,Animalia,Chordata,Aves,Columbiformes,Columbidae,,missing or wrong higher taxonomy,
+Willisornis poecilinotus,,Animalia,Chordata,Aves,Passeriformes,Thamnophilidae,,missing or wrong higher taxonomy,
+Lilium candidum,,Plantae,Tracheophyta,Liliopsida,Liliales,Liliaceae,,missing or wrong higher taxonomy,
+Iris pseudacorus,,Plantae,Tracheophyta,Liliopsida,Asparagales,Iridaceae,,missing or wrong higher taxonomy,
+Cecropia angustifolia,,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,,missing or wrong higher taxonomy,
+Cecropia peltata,,Plantae,Tracheophyta,Magnoliopsida,Rosales,Urticaceae,,missing or wrong higher taxonomy,
+Micropholis guyanensis,,Plantae,Tracheophyta,Magnoliopsida,Ericales,Sapotaceae,,missing or wrong higher taxonomy,
+Calycophyllum multiflorum,,Plantae,Tracheophyta,Magnoliopsida,Gentianales,Rubiaceae,,missing or wrong higher taxonomy,
+Triplaris americana,,Plantae,Tracheophyta,Magnoliopsida,Caryophyllales,Polygonaceae,,missing or wrong higher taxonomy,
+Cochlearius cochlearius,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Chlorestes notata,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Synallaxis albescens,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Prochilodus costatus,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Anartia amathea roeselia,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Leptotes cassius cassius,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Moneuptychia melchiades,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Morpho epistrophus catenaria,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Cordia superba,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Melinis minutiflora,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Luehea divaricata,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Calophyllum longifolium,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Aniba perutilis,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Cinnamomum glaziovii,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Nectandra acutifolia,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Crepidospermum rhoifolium,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Cupania seemannii,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Melicope glabra,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Copaifera martii,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Herrania purpurea,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Hirtella americana,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Banara guianensis,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Eugenia nesiotica,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Myrceugenia acutata,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Lepidocaryum tenue,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Mussismilia brasiliensis,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Mussismilia harttii,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Mussismilia hispida,,,,,,,NA,implausible maximum lifespan for the taxon and no verifiable source found; removed from the lifespan analysis,
+Proechimys semispinosus,,,,,,,5.8,implausible value (0.1 years) replaced,AnAge (Tacutu et al. 2018): maximum longevity 5.8 years (captivity)

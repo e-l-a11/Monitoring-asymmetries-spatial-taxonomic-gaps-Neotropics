@@ -1,12 +1,12 @@
-# 06. Figure 2: taxa de amostragem relativa x distancia (sampbias), (A) terra, (B) mar
+# 06. Figure 2: relative sampling rate vs distance (sampbias), (A) land, (B) sea
 # Reads results/sampbias_results.csv (main analysis = variant A, all records).
-# Curva de cada fator: taxa = exp(-w * d), com w = log(2) / meia-distancia.
-# Como cada fator tem um so parametro, a faixa do IC 95% sai direto de half_lo e half_hi.
+# Curve of each factor: rate = exp(-w * d), with w = log(2) / half-distance.
+# As each factor has a single parameter, the 95% band comes directly from half_lo and half_hi.
 suppressMessages({library(ggplot2); library(dplyr)})
 r <- read.csv("results/sampbias_results.csv")
 
-# Fatores que entram: convergiram e tem efeito. Fora: cidades (sem efeito), estradas (colineares
-# com instituicoes, instaveis no teste B), portos e instituicoes no mar (nao convergiram).
+# Factors shown: converged and with an effect. Not shown: cities (no effect), roads (collinear with
+# institutions, unstable in variant B), ports and institutions at sea (did not converge).
 keep <- data.frame(realm  = c("terra", "terra", "terra", "mar", "mar"),
                    factor = c("institutions", "waterbodies", "airports", "coast", "airports"),
                    nome   = c("Research institutions", "Rivers and lakes", "Airports", "Coastline", "Airports"))
@@ -21,7 +21,7 @@ curvas <- r %>% group_by(painel, nome) %>%
   reframe(d = d, taxa = exp(-log(2) / half_distance_km * d),
           lo = exp(-log(2) / half_lo * d), hi = exp(-log(2) / half_hi * d))
 pontos <- r %>% mutate(rot = paste0(nome, "\n", format(half_distance_km, big.mark = ","), " km"),
-  # posicao do rotulo: rios a esquerda (acima), instituicoes a direita (abaixo), demais a direita (acima)
+  # label position: rivers to the left (above), institutions to the right (below), others to the right (above)
   esq = nome == "Rivers and lakes", baixo = nome == "Research institutions",
   lx = ifelse(esq, half_distance_km / 1.25, half_distance_km * ifelse(baixo, 1.3, 1.12)), ly = ifelse(baixo, 0.47, 0.53),
   hj = ifelse(esq, 1, 0), vj = ifelse(baixo, 1, 0))
@@ -47,5 +47,5 @@ p <- ggplot(curvas, aes(d, taxa, colour = nome, fill = nome)) +
 
 dir.create("figures", showWarnings = FALSE)
 ggsave("figures/Figure2.png", p, width = 9, height = 4.2, dpi = 300, bg = "white")
-ggsave("figures/Figure2.pdf", p, width = 9, height = 4.2, device = cairo_pdf)  # textos ficam como texto (Canva)
+ggsave("figures/Figure2.pdf", p, width = 9, height = 4.2, device = cairo_pdf)  # text stays editable
 print(pontos[, c("painel", "nome", "half_distance_km", "half_lo", "half_hi")], row.names = FALSE)

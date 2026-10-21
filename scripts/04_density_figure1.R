@@ -1,6 +1,6 @@
 # 04. Figure 1: (A) map of sites and (B) land-based site density per country (+ GDP per capita partial correlation)
-# Densidade: sites cuja coordenada cai em terra (Natural Earth 1:50m) nos 28 países/territórios,
-# área terrestre do Banco Mundial (AG.LND.TOTL.K2, 2021) — mesmo método de densidade_por_pais.csv
+# Density: sites whose coordinates fall on land (Natural Earth 1:50m) in the 28 countries/territories,
+# divided by World Bank land area (AG.LND.TOTL.K2, 2021)
 source("scripts/00_theme.R")
 suppressMessages({library(sf); library(rnaturalearth); library(ggspatial)}); sf_use_s2(FALSE)
 s <- read.csv("data/site_data.csv", check.names = FALSE); s <- s[!is.na(s$Site.Latitude) & !is.na(s$Site.Longitude), ]
@@ -21,7 +21,7 @@ d$sites_per_100k_km2 <- round(1e5 * d$sites_on_land / d$land_area_km2, 2)
 dir.create("results", showWarnings = FALSE)
 write.csv(d, "results/land_site_density_by_country.csv", row.names = FALSE)
 x <- d[d$sites_on_land > 0, ]; med <- median(x$sites_per_100k_km2); br <- d[d$iso3 == "BRA", ]
-cat(sprintf("terra: %d sites | Brasil %d (%.1f%%) | pares projeto-país %d, Brasil %d (%.1f%%) | densidade BR %.1f | mediana %.1f | rank BR %d de %d\n",
+cat(sprintf("04 | land: %d sites | Brazil %d (%.1f%%) | project-country pairs %d, Brazil %d (%.1f%%) | density BR %.1f | median %.1f | rank BR %d of %d\n",
     sum(d$sites_on_land), br$sites_on_land, 100 * br$sites_on_land / sum(d$sites_on_land), sum(d$projects), br$projects,
     100 * br$projects / sum(d$projects), br$sites_per_100k_km2, med, rank(-x$sites_per_100k_km2)[x$iso3 == "BRA"], nrow(x)))
 
@@ -47,7 +47,7 @@ pA <- ggplot() +
         legend.title = element_text(size = 9), legend.text = element_text(size = 8),
         legend.background = element_rect(fill = alpha("white", 0.85), colour = NA))
 
-# ---- (B) densidade
+# ---- (B) density
 x <- x %>% mutate(rot = ifelse(land_area_km2 > 5e5, paste0(country, "*"), country))
 pB <- ggplot(x, aes(sites_per_100k_km2, reorder(rot, sites_per_100k_km2))) +
   geom_segment(aes(x = 0.2, xend = sites_per_100k_km2, yend = reorder(rot, sites_per_100k_km2)), colour = "grey80", linewidth = 0.6) +

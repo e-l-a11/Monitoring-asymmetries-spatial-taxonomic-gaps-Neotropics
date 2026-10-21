@@ -15,12 +15,12 @@ x <- x %>% mutate(tipo = factor(cap(tipo), levels = cap(ord_t)),
                   rot = paste0(cap(grupo), " (", N, ")"))
 ordem <- x %>% distinct(ambiente, rot, N) %>% arrange(ambiente, N)
 x$rot <- factor(x$rot, levels = unique(ordem$rot))
-# grade completa (células vazias em branco com borda)
+# full grid (empty cells white with a border)
 grade <- x %>% distinct(ambiente, rot) %>% tidyr::crossing(tipo = factor(cap(ord_t), levels = cap(ord_t)))
-cat("07 | grupos na figura:", n_distinct(x$rot), "| tipos:", length(ord_t), "\n")
+cat("07 | groups in the figure:", n_distinct(x$rot), "| types:", length(ord_t), "\n")
 for (a in unique(x$ambiente)) { y <- x[x$ambiente == a, ]
   ab <- y %>% filter(tipo == "Abundance") %>% arrange(-p)
-  cat(sprintf("07 | %s: abundância é o tipo mais comum em %d de %d grupos\n", a,
+  cat(sprintf("07 | %s: abundance is the most common type in %d of %d groups\n", a,
       sum(y %>% group_by(rot) %>% slice_max(p, n = 1, with_ties = FALSE) %>% pull(tipo) == "Abundance"), n_distinct(y$rot))) }
 
 painel <- function(a, low, high) {
@@ -42,9 +42,9 @@ salvar(fig, "FigureS2", 8.5, 9)
 v0 <- read.csv("data/variable_data.csv", check.names = FALSE, strip.white = TRUE); names(v0) <- trimws(names(v0))
 v0 <- v0[tolower(v0$Variable.Type) == "biotic" & v0$Metrics != "na", ]
 for (r in c("marine", "terrestrial")) { x0 <- v0[tolower(v0$Region) == r, ]
-  cat(r, ": grupos", length(unique(x0$`Groups-variables`)), "| tipos", length(unique(x0$Metrics)), "| máx. tipos por grupo",
+  cat(r, ": groups", length(unique(x0$`Groups-variables`)), "| types", length(unique(x0$Metrics)), "| max. types per group",
       max(tapply(x0$Metrics, x0$`Groups-variables`, function(z) length(unique(z)))), "\n") }
-for (m in c("dna analysis", "phenology", "productivity")) cat("07 | projetos que medem", m, ":", length(unique(v0$Network.ID[tolower(trimws(v0$Metrics)) == m])), "\n")
+for (m in c("dna analysis", "phenology", "productivity")) cat("07 | projects measuring", m, ":", length(unique(v0$Network.ID[tolower(trimws(v0$Metrics)) == m])), "\n")
 
 # Figure S3: number of projects measuring each type of abiotic variable (terrestrial and marine projects combined)
 v <- read.csv("data/variable_data.csv", check.names = FALSE, strip.white = TRUE)

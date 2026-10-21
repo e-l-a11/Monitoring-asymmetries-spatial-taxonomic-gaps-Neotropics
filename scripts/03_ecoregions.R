@@ -5,7 +5,7 @@
 #    (biotic variable-by-site records). Each site counts only in ecoregions of its own realm: terrestrial and freshwater
 #    sites in terrestrial ecoregions, marine sites in marine ecoregions (data/site_habitat_class.csv).
 #    Terrestrial: without corals, plankton, seagrass, benthos, zooplankton. Marine: all groups.
-#    (o filtro str_detect(REALM, "mar") do script original não pegava nenhuma linha; aqui o marinho é a coluna ECOREGION)
+#    (the str_detect(REALM, "mar") filter of the original script matched no rows; here the marine ecoregion is the ECOREGION column)
 suppressMessages({library(sf); library(dplyr)}); sf_use_s2(FALSE)
 s <- read.csv("data/site_data.csv", check.names = FALSE)
 v <- read.csv("data/variable_data.csv")
@@ -27,13 +27,13 @@ if (file.exists(paste0(SH, "wwf_terr_ecos.shp")) && file.exists(paste0(SH, "meow
 stopifnot(all(eco$Network.ID %in% s$Network.ID))
 cat("03 | site_ecoregions:", nrow(eco), "sites | terrestrial ecoregion:", sum(!is.na(eco$ECO_NAME)), "| marine ecoregion:", sum(!is.na(eco$ECOREGION)), "\n")
 
-# CORREÇÃO (19/10/2026): o shapefile MEOW cobre uma faixa de terra e a costa cai em ecorregiões terrestres (WWF); sem filtro,
-# 2.101 sítios de terra/água doce entravam em ecorregiões marinhas e 561 sítios marinhos em terrestres. Agora cada sítio só
-# entra nas ecorregiões do seu ambiente (classe de data/site_habitat_class.csv): terra + água doce nas WWF, marinhos nas MEOW.
+# CORRECTION (19 Oct 2026): the MEOW polygons include a strip of coastal land and the coast falls in WWF terrestrial ecoregions;
+# without a filter, 2,101 terrestrial/freshwater sites fell in marine ecoregions and 561 marine sites in terrestrial ones. Each site
+# now enters only the ecoregions of its own realm (class in data/site_habitat_class.csv): land + freshwater in WWF, marine in MEOW.
 cl <- read.csv("data/site_habitat_class.csv")
 classe <- cl$classe[match(eco$linha_planilha, cl$linha_planilha)]; stopifnot(!any(is.na(classe)))
 eco_comp <- eco; eco_comp$ECO_NAME[classe == "marine"] <- NA; eco_comp$ECOREGION[classe != "marine"] <- NA
-cat("03 | composição: sítios em ecorregião terrestre:", sum(!is.na(eco_comp$ECO_NAME)), "| em ecorregião marinha:", sum(!is.na(eco_comp$ECOREGION)), "\n")
+cat("03 | composition: sites in a terrestrial ecoregion:", sum(!is.na(eco_comp$ECO_NAME)), "| in a marine ecoregion:", sum(!is.na(eco_comp$ECOREGION)), "\n")
 
 grupos_para_remover <- c("corals", "plankton", "seagrass", "benthos", "zooplaktons")
 comp <- function(eco, col, remover) {
@@ -41,7 +41,7 @@ comp <- function(eco, col, remover) {
     inner_join(eco[!is.na(eco[[col]]), c("Network.ID", col)], by = "Network.ID", relationship = "many-to-many") %>%
     count(eco = .data[[col]], grupo = Groups.variables) %>% group_by(eco) %>%
     mutate(total = sum(n), pct = round(100 * n / total, 1)) %>% ungroup() %>%
-    mutate(rank = match(eco, unique(eco[order(-total, eco)]))) %>% arrange(rank, -n)   # empate: ordem alfabética, como no slice_head do original
+    mutate(rank = match(eco, unique(eco[order(-total, eco)]))) %>% arrange(rank, -n)   # ties: alphabetical order, as in slice_head of the original
 }
 terr <- comp(eco_comp, "ECO_NAME", grupos_para_remover)
 mar  <- comp(eco_comp, "ECOREGION", c())

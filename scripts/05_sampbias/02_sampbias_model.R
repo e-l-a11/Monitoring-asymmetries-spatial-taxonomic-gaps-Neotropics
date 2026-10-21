@@ -12,7 +12,7 @@ sf_use_s2(FALSE)
 args    <- commandArgs(trailingOnly = TRUE)
 f       <- args[1]; fclass <- args[2]; finst <- args[3]; realm <- args[4]; variant <- args[5]
 res_deg <- as.numeric(args[6]); iters <- as.numeric(args[7]); seed <- as.numeric(args[8])
-label   <- if (length(args) >= 9) paste0("_", args[9]) else ""   # rotulo opcional para nao sobrescrever resultados
+label   <- if (length(args) >= 9) paste0("_", args[9]) else ""   # optional label, to avoid overwriting results
 
 get <- function(type, cat) st_make_valid(ne_download(scale = 10, type = type, category = cat, returnclass = "sf")[, 1])
 O <- "results/sampbias_runs/"; dir.create(O, showWarnings = FALSE, recursive = TRUE)
@@ -23,7 +23,7 @@ g5 <- readRDS(paste0(O, "gaz5.rds"))
 
 inst_df <- read.csv(finst, fileEncoding = "UTF-8-BOM")
 institutions <- st_as_sf(inst_df, coords = c("lon", "lat"), crs = 4326)
-cat("instituicoes carregadas:", nrow(institutions), "\n")
+cat("institutions loaded:", nrow(institutions), "\n")
 
 gaz <- if (realm == "terra") c(g5[c("roads", "cities", "waterbodies", "airports")], list(institutions = institutions)) else
        list(ports = g5$ports, airports = g5$airports, cities = g5$cities, coast = readRDS(paste0(O, "gaz_coast.rds")), institutions = institutions)
@@ -36,18 +36,18 @@ d  <- d[d$classe == ifelse(realm == "terra", "terrestrial", "marine"), ]
 d$decimalLongitude <- as.numeric(d$Site.Longitude); d$decimalLatitude <- as.numeric(d$Site.Latitude)
 bad <- is.na(d$decimalLongitude) | is.na(d$decimalLatitude) | d$decimalLongitude < -120 | d$decimalLongitude > -28 |
        d$decimalLatitude < -56 | d$decimalLatitude > 33
-cat("realm:", realm, "| sites da classe:", nrow(d), "| excluidos por coordenada invalida:", sum(bad), "\n")
+cat("realm:", realm, "| sites in the class:", nrow(d), "| excluded for invalid coordinates:", sum(bad), "\n")
 d <- d[!bad, ]; d$species <- d$Network.ID
 if (variant == "B") d <- d %>% mutate(cx = floor(decimalLongitude / res_deg), cy = floor(decimalLatitude / res_deg)) %>%
                           distinct(Network.ID, cx, cy, .keep_all = TRUE)
 
 w        <- ne_countries(scale = 50, returnclass = "sf")
 lac_land <- st_union(st_union(st_make_valid(w[w$subregion %in% c("South America", "Central America", "Caribbean"), ])), readRDS("data/oceanic_islands_ne10m.rds"))
-simp     <- st_union(st_simplify(lac_land, dTolerance = 0.02), readRDS("data/oceanic_islands_ne10m.rds"))   # v6: o simplify apaga ilhas pequenas
+simp     <- st_union(st_simplify(lac_land, dTolerance = 0.02), readRDS("data/oceanic_islands_ne10m.rds"))   # v6: st_simplify removes small islands
 uni <- if (realm == "terra") st_sf(geometry = lac_land) else
        st_sf(geometry = st_make_valid(st_difference(st_buffer(simp, dist = 3.3), st_buffer(simp, dist = -0.3))))
 pts <- st_as_sf(d, coords = c("decimalLongitude", "decimalLatitude"), crs = 4326, remove = FALSE)
-cat("sites no universo (geometria):", sum(lengths(st_intersects(pts, uni)) > 0), "de", nrow(d), "\n")
+cat("sites inside the study region (geometry):", sum(lengths(st_intersects(pts, uni)) > 0), "of", nrow(d), "\n")
 
 set.seed(seed)
 b <- calculate_bias(d[, c("species", "decimalLongitude", "decimalLatitude")], gaz = gaz, res = res_deg, terrestrial = FALSE,

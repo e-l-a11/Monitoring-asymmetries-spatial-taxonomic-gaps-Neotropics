@@ -55,7 +55,7 @@ Tables used in all analyses (outputs of scripts 01–02):
 | `research_institutions_ror_lac.csv` | Research institutions from the Research Organization Registry (ROR API v2, accessed 22 Sep 2026) |
 | `oceanic_islands_ne10m.rds` | Oceanic islands added to the marine study region of sampbias |
 
-`data/raw/` holds the compiled spreadsheets as received from the contributing projects, from which scripts 01–02 rebuild the tables above. Personal e-mail addresses, links to private working files and the column of lifespan sources were removed before publication. `site_habitat_class_raw.csv` is the site classification produced in an earlier step (rules in the column `regra`).
+`data/raw/` holds the compiled spreadsheets as received from the contributing projects, from which scripts 01–02 rebuild the tables above. Personal e-mail addresses, links to private working files and the column of lifespan sources were removed before publication. `site_habitat_class_raw.csv` is the site classification produced in an earlier step (rules in the column `regra`). `species_corrections.csv` lists every correction applied to the species table by script 02 (spelling errors, names updated to the accepted name in both GBIF and the Catalogue of Life, missing higher taxonomy, and maximum lifespans that were implausible for the taxon and could not be verified, which were set to missing), with the reason and source of each; script 02 also uses a single maximum lifespan per species (the largest value across records) and keeps one record per species and project.
 
 ## Corrections relative to the previous version of this repository
 

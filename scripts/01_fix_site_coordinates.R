@@ -19,7 +19,7 @@ s <- read.csv("data/raw/site_data_raw.csv", strip.white = TRUE, check.names = FA
 s$linha_planilha <- seq_len(nrow(s)) + 1
 log <- data.frame()
 anota <- function(l, acao, antes, depois) log <<- rbind(log, data.frame(linha_planilha = s$linha_planilha[l],
-  Network.ID = s$Network.ID[l], Site.Name = s$Site.Name[l], acao = acao, antes = antes, depois = depois))
+  Network.ID = s$Network.ID[l], Site.Name = s$Site.Name[l], action = acao, before = antes, after = depois))
 L <- function(x) match(x, s$linha_planilha)
 coord <- function(l) paste(s$Site.Latitude[l], s$Site.Longitude[l])
 

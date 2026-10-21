@@ -1,4 +1,4 @@
-"linha_planilha","Network.ID","Site.Name","acao","antes","depois"
+"linha_planilha","Network.ID","Site.Name","action","before","after"
 775,"BISC","Parque Nacional de São Joaquim - Morro da Igreja","lat/lon swapped","-49.49482231 -28.10351615","-28.10351615 -49.49482231"
 776,"BISC","Parque Nacional  de São Joaquim - Santa Bárbara","lat/lon swapped","-49.6271502 -28.1517662","-28.1517662 -49.6271502"
 777,"BISC","Parque Estadual da Serra Furada","lat/lon swapped","-49.38938984 -28.18066581","-28.18066581 -49.38938984"

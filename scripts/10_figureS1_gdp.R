@@ -1,6 +1,6 @@
 # 10. Figure S1: land-based site density vs GDP per capita, both controlling for land area (partial residuals)
-# Mesma correlação parcial do script 04 (países com PIB; Cuba não tem): resíduos de log(densidade + 0.1) ~ log(área)
-# contra resíduos de log(PIB per capita) ~ log(área). Lê results/land_site_density_by_country.csv (gerado pelo 04).
+# Same partial correlation as script 04 (countries with GDP data; Cuba has none): residuals of log(density + 0.1) ~ log(area)
+# against residuals of log(GDP per capita) ~ log(area). Reads results/land_site_density_by_country.csv (from script 04).
 source("scripts/00_theme.R")
 suppressMessages(library(ggrepel))
 d0 <- read.csv("data/country_land_area_gdp.csv")

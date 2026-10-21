@@ -7,7 +7,7 @@ pat <- "^sampbias_v6_([a-z]+)_([AB])_([0-9.]+)deg_it([0-9.e+]+)_seed([0-9]+)_fin
 info <- do.call(rbind, lapply(files, function(f) { m <- regmatches(f, regexec(pat, f))[[1]]
   data.frame(file = f, csv = sub("\\.rds$", ".csv", f), realm = m[2], variant = m[3], res = m[4], iters = m[5], seed = m[6]) }))
 
-rhat <- function(mat) {                       # mat: draws x chains; R-hat com cadeias divididas ao meio
+rhat <- function(mat) {                       # mat: draws x chains; split-chain R-hat
   n <- nrow(mat); h <- n %/% 2; sp <- cbind(mat[1:h, , drop = FALSE], mat[(h + 1):(2 * h), , drop = FALSE])
   nn <- nrow(sp); W <- mean(apply(sp, 2, var)); B <- nn * var(colMeans(sp))
   sqrt(((nn - 1) / nn * W + B / nn) / W) }
@@ -19,7 +19,7 @@ for (g in unique(paste(info$realm, info$variant, sep = "_"))) {
   ii <- info[paste(info$realm, info$variant, sep = "_") == g, ]
   bs <- lapply(paste0(O, ii$file), readRDS); n <- min(sapply(bs, function(b) nrow(b$bias_estimate)))
   facs <- sub("^w_", "", grep("^w_", names(bs[[1]]$bias_estimate), value = TRUE))
-  c1 <- read.csv(paste0(O, ii$csv[1]))[1, ]   # registros/celulas ja calculados no momento em que a cadeia 1 rodou
+  c1 <- read.csv(paste0(O, ii$csv[1]))[1, ]   # records/cells already computed when chain 1 ran
   for (fc in facs) {
     mat <- sapply(bs, function(b) b$bias_estimate[[paste0("w_", fc)]][seq_len(n)])
     w <- as.vector(mat); h <- log(2) / w
@@ -33,6 +33,6 @@ for (g in unique(paste(info$realm, info$variant, sep = "_"))) {
   }
 }
 res <- do.call(rbind, out)
-res$convergiu <- ifelse(res$Rhat < 1.05 & res$ESS_total > 400, "sim", "NAO")
+res$converged <- ifelse(res$Rhat < 1.05 & res$ESS_total > 400, "yes", "no")
 write.csv(res, "results/sampbias_results.csv", row.names = FALSE)
-print(res[, c("realm", "variant", "factor", "half_distance_km", "half_lo", "half_hi", "rate_at_100km", "Rhat", "ESS_total", "convergiu")], row.names = FALSE)
+print(res[, c("realm", "variant", "factor", "half_distance_km", "half_lo", "half_hi", "rate_at_100km", "Rhat", "ESS_total", "converged")], row.names = FALSE)
